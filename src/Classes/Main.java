@@ -1,10 +1,10 @@
-package proyectoso1;
+package Classes;
 
 /**
  *
  * @author Ignacio Lemmo y Maria López
  */
-public class ProyectoSO1 {
+public class Main {
 
     public static void main(String[] args) {
         System.out.println("Inicio del Proyecto");
