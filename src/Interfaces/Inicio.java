@@ -1,6 +1,12 @@
 package Interfaces;
 
 import Clases.Main;
+import Clases.Planta1.Botones;
+import Clases.Planta2.Botones2;
+import Clases.Planta2.Camaras2;
+import Clases.Planta2.Jefe2;
+import Clases.Planta2.Pantallas2;
+import Clases.Planta2.Pines2;
 import java.util.concurrent.Semaphore;
 
 public class Inicio extends javax.swing.JFrame {
@@ -62,6 +68,12 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void iniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iniciarActionPerformed
+        
+        //Apertura de interfaz.
+        Simulacion simulacion = new Simulacion();
+        simulacion.setLocationRelativeTo(null);
+        simulacion.setVisible(true);
+
         //Creación de Semáforos de Productores.
         Semaphore pantallas1 = new Semaphore(Main.pantallas1Almacen);
         Semaphore botones1= new Semaphore(Main.botones1Almacen);
@@ -89,15 +101,30 @@ public class Inicio extends javax.swing.JFrame {
         Semaphore pines1Ensamblador = new Semaphore(0);
         Semaphore camaras1Ensamblador = new Semaphore(0);
         
-        Semaphore pantallas2nsamblador = new Semaphore(0);
-        Semaphore botones2nsamblador = new Semaphore(0);
+        Semaphore pantallas2Ensamblador = new Semaphore(0);
+        Semaphore botones2Ensamblador = new Semaphore(0);
         Semaphore pines2Ensamblador = new Semaphore(0);
         Semaphore camaras2Ensamblador = new Semaphore(0);
         
-        //Apertura de interfaz.
-        Simulacion simulacion = new Simulacion();
-        simulacion.setLocationRelativeTo(null);
-        simulacion.setVisible(true);
+        //Creación de Semáforo del paso de dias.
+        Semaphore diasMutex = new Semaphore(1);
+        
+        //Inicialización de productores.
+        Pantallas2 pantallas2Productor = new Pantallas2 (pantallas2, pantallas2Mutex, pantallas2Ensamblador);
+        pantallas2Productor.start();
+        
+        Botones2 botones2Productor = new Botones2(botones2, botones2Mutex, botones2Ensamblador);
+        botones2Productor.start();
+        
+        Pines2 pines2Productor = new Pines2 (pines2, pines2Mutex, pines2Ensamblador);
+        pines2Productor.start();
+        
+        Camaras2 camaras2Productor = new Camaras2 (camaras2, camaras2Mutex, camaras2Ensamblador);
+        camaras2Productor.start();
+       
+        //Inicialización del Gerente y del Jefe.
+        Jefe2 jefe2 = new Jefe2(diasMutex);
+        jefe2.start();
         
         //Cierre de la ventana.
         this.dispose();

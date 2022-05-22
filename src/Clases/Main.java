@@ -10,18 +10,19 @@ public class Main {
     
     //Declaracion del tiempo.
     public static volatile int tiempo;
-    public static volatile int tiempoRestante;
+    public static volatile int diasRestantes;
+    public static volatile int dias;
     
     //Declaración de Productores.
-    public static volatile int pantallas1;
-    public static volatile int botones1;
-    public static volatile int pines1;
-    public static volatile int camaras1;
+    public static volatile int pantallas1Contratados;
+    public static volatile int botones1Contratados;
+    public static volatile int pines1Contratados;
+    public static volatile int camaras1Contratados;
     
-    public static volatile int pantallas2;
-    public static volatile int botones2;
-    public static volatile int pines2;
-    public static volatile int camaras2;
+    public static volatile int pantallas2Contratados;
+    public static volatile int botones2Contratados;
+    public static volatile int pines2Contratados;
+    public static volatile int camaras2Contratados;
     
     //Declaracion de Ensambladores.
     public static volatile int ensambladores1;
@@ -41,7 +42,7 @@ public class Main {
     
     public static volatile int pantallas2Producidas = 0;
     public static volatile int botones2Producidos = 0;
-    public static volatile int pines2roducidos = 0;
+    public static volatile int pines2Producidos = 0;
     public static volatile int camaras2Producidas = 0;
     public static volatile int telefonos2Producidos = 0;
     

@@ -10,17 +10,17 @@ public class Parametros extends javax.swing.JFrame {
         
         //Establecer en los campos los valores correspondientes.
         tiempo.setText(String.valueOf(Main.tiempo));
-        tiempoRestante.setText(String.valueOf(Main.tiempoRestante));
+        tiempoRestante.setText(String.valueOf(Main.diasRestantes));
         
-        pantallas1.setText(String.valueOf(Main.pantallas1));
-        botones1.setText(String.valueOf(Main.botones1));
-        pines1.setText(String.valueOf(Main.pines1));
-        camaras1.setText(String.valueOf(Main.camaras1));
+        pantallas1.setText(String.valueOf(Main.pantallas1Contratados));
+        botones1.setText(String.valueOf(Main.botones1Contratados));
+        pines1.setText(String.valueOf(Main.pines1Contratados));
+        camaras1.setText(String.valueOf(Main.camaras1Contratados));
         
-        pantallas2.setText(String.valueOf(Main.pantallas2));
-        botones2.setText(String.valueOf(Main.botones2));
-        pines2.setText(String.valueOf(Main.pines2));
-        camaras2.setText(String.valueOf(Main.camaras2));
+        pantallas2.setText(String.valueOf(Main.pantallas2Contratados));
+        botones2.setText(String.valueOf(Main.botones2Contratados));
+        pines2.setText(String.valueOf(Main.pines2Contratados));
+        camaras2.setText(String.valueOf(Main.camaras2Contratados));
         
         pantallas1Almacen.setText(String.valueOf(Main.pantallas1Almacen));
         botones1Almacen.setText(String.valueOf(Main.botones1Almacen));
@@ -410,13 +410,13 @@ public class Parametros extends javax.swing.JFrame {
         
         //Establecer nuevo tiempo.
         Main.tiempo = Integer.parseInt(tiempo.getText());
-        Main.tiempoRestante = Integer.parseInt(tiempoRestante.getText());
+        Main.diasRestantes = Integer.parseInt(tiempoRestante.getText());
         
         //Establecer nuevos parametros de la planta 1.
-        Main.pantallas1 = Integer.parseInt(pantallas1.getText());
-        Main.botones1 = Integer.parseInt(botones1.getText());
-        Main.pines1 = Integer.parseInt(pines1.getText());
-        Main.camaras1 = Integer.parseInt(camaras1.getText());
+        Main.pantallas1Contratados = Integer.parseInt(pantallas1.getText());
+        Main.botones1Contratados = Integer.parseInt(botones1.getText());
+        Main.pines1Contratados = Integer.parseInt(pines1.getText());
+        Main.camaras1Contratados = Integer.parseInt(camaras1.getText());
         
         Main.pantallas1Almacen = Integer.parseInt(pantallas1Almacen.getText());
         Main.botones1Almacen = Integer.parseInt(botones1Almacen.getText());
@@ -424,10 +424,10 @@ public class Parametros extends javax.swing.JFrame {
         Main.camaras1Almacen = Integer.parseInt(camaras1Almacen.getText());
         
         //Establecer nuevos parametros de la planta 2.
-        Main.pantallas2 = Integer.parseInt(pantallas2.getText());
-        Main.botones2 = Integer.parseInt(botones2.getText());
-        Main.pines2 = Integer.parseInt(pines2.getText());
-        Main.camaras2 = Integer.parseInt(camaras2.getText());
+        Main.pantallas2Contratados = Integer.parseInt(pantallas2.getText());
+        Main.botones2Contratados = Integer.parseInt(botones2.getText());
+        Main.pines2Contratados = Integer.parseInt(pines2.getText());
+        Main.camaras2Contratados = Integer.parseInt(camaras2.getText());
         
         Main.pantallas2Almacen = Integer.parseInt(pantallas2Almacen.getText());
         Main.botones2Almacen = Integer.parseInt(botones2Almacen.getText());

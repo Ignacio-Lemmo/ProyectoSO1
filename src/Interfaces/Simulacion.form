@@ -33,8 +33,8 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel24" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="jLabel26" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="diasRestantes" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="dias" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
@@ -44,17 +44,17 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="pantallas2" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="pantallas2Progreso" alignment="0" pref="0" max="32767" attributes="0"/>
                                   <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="botones2" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="botones2Progreso" min="-2" pref="99" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="pines2" min="-2" pref="86" max="-2" attributes="0"/>
+                                      <Component id="pines2Progreso" min="-2" pref="86" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="camaras2" min="-2" pref="103" max="-2" attributes="0"/>
+                                      <Component id="camaras2Progreso" min="-2" pref="103" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
@@ -67,13 +67,13 @@
                           </Group>
                           <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel18" min="-2" pref="104" max="-2" attributes="0"/>
+                              <Component id="pantallas2" min="-2" pref="104" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel11" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="botones2" min="-2" pref="99" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel13" min="-2" pref="86" max="-2" attributes="0"/>
+                              <Component id="pines2" min="-2" pref="86" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel14" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="camaras2" min="-2" pref="103" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -164,13 +164,15 @@
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel27" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
@@ -184,10 +186,10 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="pantallas2" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="botones2" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="pines2" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="camaras2" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="pantallas2Progreso" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="botones2Progreso" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="pines2Progreso" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="camaras2Progreso" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -196,10 +198,10 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="pantallas2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="botones2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="pines2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="camaras2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -209,12 +211,12 @@
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dias" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="diasRestantes" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -287,38 +289,69 @@
         <Property name="text" type="java.lang.String" value="Almacen de Botones"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
+    <Component class="javax.swing.JLabel" name="botones2">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel12">
       <Properties>
         <Property name="text" type="java.lang.String" value="Almacen de Pines"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel13">
+    <Component class="javax.swing.JLabel" name="pines2">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel14">
+    <Component class="javax.swing.JLabel" name="camaras2">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel15">
       <Properties>
         <Property name="text" type="java.lang.String" value="Almacen de C&#xe1;maras"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="pantallas2">
+    <Component class="javax.swing.JProgressBar" name="pantallas2Progreso">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="camaras2">
+    <Component class="javax.swing.JProgressBar" name="camaras2Progreso">
+      <Properties>
+        <Property name="maximum" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="Main.camaras2Almacen" type="code"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="pines2">
+    <Component class="javax.swing.JProgressBar" name="pines2Progreso">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="botones2">
+    <Component class="javax.swing.JProgressBar" name="botones2Progreso">
+      <Properties>
+        <Property name="maximum" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="Main.botones2Almacen" type="code"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel16">
       <Properties>
@@ -330,10 +363,13 @@
         <Property name="text" type="java.lang.String" value="Almacen de Pantallas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel18">
+    <Component class="javax.swing.JLabel" name="pantallas2">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel19">
       <Properties>
@@ -360,20 +396,26 @@
         <Property name="text" type="java.lang.String" value="Dias restantes para el corte:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel24">
+    <Component class="javax.swing.JLabel" name="diasRestantes">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel25">
       <Properties>
         <Property name="text" type="java.lang.String" value="D&#xed;as transcurridos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel26">
+    <Component class="javax.swing.JLabel" name="dias">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel27">
       <Properties>
