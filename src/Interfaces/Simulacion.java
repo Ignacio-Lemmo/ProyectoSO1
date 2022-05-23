@@ -56,9 +56,9 @@ public class Simulacion extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         pantallas2 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
+        JLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
+        producidos2 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         diasRestantes = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
@@ -102,7 +102,11 @@ public class Simulacion extends javax.swing.JFrame {
 
         jLabel15.setText("Almacen de Cámaras");
 
+        pantallas2Progreso.setMaximum(Main.pantallas2Almacen);
+
         camaras2Progreso.setMaximum(Main.camaras2Almacen);
+
+        pines2Progreso.setMaximum(Main.pines2Almacen);
 
         botones2Progreso.setMaximum(Main.botones2Almacen);
 
@@ -114,11 +118,11 @@ public class Simulacion extends javax.swing.JFrame {
 
         jLabel19.setText("Ensamblados:");
 
-        jLabel20.setText("Ensamblados:");
+        JLabel20.setText("Producidos");
 
         jLabel21.setText("0");
 
-        jLabel22.setText("0");
+        producidos2.setText("0");
 
         jLabel23.setText("Dias restantes para el corte:");
 
@@ -185,14 +189,14 @@ public class Simulacion extends javax.swing.JFrame {
                                 .addComponent(camaras2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(JLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(producidos2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(69, Short.MAX_VALUE))
+                        .addContainerGap(76, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
@@ -276,8 +280,8 @@ public class Simulacion extends javax.swing.JFrame {
                         .addComponent(pines2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(camaras2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel20)
-                        .addComponent(jLabel22)))
+                        .addComponent(JLabel20)
+                        .addComponent(producidos2)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pantallas2)
@@ -339,6 +343,7 @@ public class Simulacion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JLabel20;
     private javax.swing.JProgressBar botones1;
     public static volatile javax.swing.JLabel botones2;
     public static volatile javax.swing.JProgressBar botones2Progreso;
@@ -356,9 +361,7 @@ public class Simulacion extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel27;
@@ -378,5 +381,6 @@ public class Simulacion extends javax.swing.JFrame {
     private javax.swing.JProgressBar pines1;
     public static volatile javax.swing.JLabel pines2;
     public static volatile javax.swing.JProgressBar pines2Progreso;
+    public static volatile javax.swing.JLabel producidos2;
     // End of variables declaration//GEN-END:variables
 }

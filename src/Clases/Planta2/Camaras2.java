@@ -20,7 +20,7 @@ public class Camaras2 extends Thread {
         this.camaras2Mutex = camaras2Mutex;
         this.ensambladorCamaras2 = ensambladorCamaras2;
     }
-    //Declaración de la ejecución/
+    //Declaración de la ejecución.
     public void run(){
         while(true){
             try {

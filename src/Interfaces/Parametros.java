@@ -2,6 +2,7 @@ package Interfaces;
 
 import Clases.CSVEL;
 import Clases.Main;
+import javax.swing.JOptionPane;
 
 public class Parametros extends javax.swing.JFrame {
 
@@ -407,39 +408,42 @@ public class Parametros extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-        //Establecer nuevo tiempo.
-        Main.tiempo = Integer.parseInt(tiempo.getText());
-        Main.diasRestantes = Integer.parseInt(tiempoRestante.getText());
-        
-        //Establecer nuevos parametros de la planta 1.
-        Main.pantallas1Contratados = Integer.parseInt(pantallas1.getText());
-        Main.botones1Contratados = Integer.parseInt(botones1.getText());
-        Main.pines1Contratados = Integer.parseInt(pines1.getText());
-        Main.camaras1Contratados = Integer.parseInt(camaras1.getText());
-        
-        Main.pantallas1Almacen = Integer.parseInt(pantallas1Almacen.getText());
-        Main.botones1Almacen = Integer.parseInt(botones1Almacen.getText());
-        Main.pines1Almacen = Integer.parseInt(pines1Almacen.getText());
-        Main.camaras1Almacen = Integer.parseInt(camaras1Almacen.getText());
-        
-        //Establecer nuevos parametros de la planta 2.
-        Main.pantallas2Contratados = Integer.parseInt(pantallas2.getText());
-        Main.botones2Contratados = Integer.parseInt(botones2.getText());
-        Main.pines2Contratados = Integer.parseInt(pines2.getText());
-        Main.camaras2Contratados = Integer.parseInt(camaras2.getText());
-        
-        Main.pantallas2Almacen = Integer.parseInt(pantallas2Almacen.getText());
-        Main.botones2Almacen = Integer.parseInt(botones2Almacen.getText());
-        Main.pines2Almacen = Integer.parseInt(pines2Almacen.getText());
-        Main.camaras2Almacen = Integer.parseInt(camaras2Almacen.getText());
-        
-      //Guardar cambios en el CSV.
-      CSVEL csvEscritor = new CSVEL();
-      csvEscritor.EscribirCsv();
-      
+        try{
+            //Establecer nuevo tiempo.
+            Main.tiempo = Integer.parseInt(tiempo.getText());
+            Main.diasRestantes = Integer.parseInt(tiempoRestante.getText());
+
+            //Establecer nuevos parametros de la planta 1.
+            Main.pantallas1Contratados = Integer.parseInt(pantallas1.getText());
+            Main.botones1Contratados = Integer.parseInt(botones1.getText());
+            Main.pines1Contratados = Integer.parseInt(pines1.getText());
+            Main.camaras1Contratados = Integer.parseInt(camaras1.getText());
+
+            Main.pantallas1Almacen = Integer.parseInt(pantallas1Almacen.getText());
+            Main.botones1Almacen = Integer.parseInt(botones1Almacen.getText());
+            Main.pines1Almacen = Integer.parseInt(pines1Almacen.getText());
+            Main.camaras1Almacen = Integer.parseInt(camaras1Almacen.getText());
+
+            //Establecer nuevos parametros de la planta 2.
+            Main.pantallas2Contratados = Integer.parseInt(pantallas2.getText());
+            Main.botones2Contratados = Integer.parseInt(botones2.getText());
+            Main.pines2Contratados = Integer.parseInt(pines2.getText());
+            Main.camaras2Contratados = Integer.parseInt(camaras2.getText());
+
+            Main.pantallas2Almacen = Integer.parseInt(pantallas2Almacen.getText());
+            Main.botones2Almacen = Integer.parseInt(botones2Almacen.getText());
+            Main.pines2Almacen = Integer.parseInt(pines2Almacen.getText());
+            Main.camaras2Almacen = Integer.parseInt(camaras2Almacen.getText());
+
+            //Guardar cambios en el CSV.
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv();
+
       
         this.dispose();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Asegurate de ingresas valores correctos en los parámetros.");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

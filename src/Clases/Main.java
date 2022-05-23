@@ -57,6 +57,10 @@ public class Main {
     public static volatile int pines2Almacen;
     public static volatile int camaras2Almacen;
     
+    //Declaracion de telefonos producidos.
+    public static volatile int producidos1 = 0;
+    public static volatile int producidos2 = 0;
+    
     public static void main(String[] args) {
         
         //Lectura de los parámetros y asignación a las variables.

@@ -8,7 +8,7 @@ public class CSVEL {
     
     private static String linea;
     private static String dataUnida = "";
-    private static String[] data;
+    public static String[] data;
     
     public static void LeerCsv(){
         try{
