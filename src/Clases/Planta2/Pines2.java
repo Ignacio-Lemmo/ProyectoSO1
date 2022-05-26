@@ -12,7 +12,7 @@ public class Pines2 extends Thread{
     Semaphore pines2Mutex;
     Semaphore ensambladorPines2;
     int contratados = Main.pines2Contratados;
-    int produccion = 2;
+    double produccion = 1/3f;
     int sueldo = 4;
     
     //Declaración del constructor.
@@ -25,14 +25,16 @@ public class Pines2 extends Thread{
     public void run(){
         while(true){
             try {
-                pines2Mutex.acquire();
+                if(contratados > 0){
+                    Thread.sleep(Math.round(Main.tiempo/(produccion)));
+                    pines2Mutex.acquire();
                     pines2.acquire();
                         Main.pines2Producidos ++;
                         Simulacion.pines2.setText(String.valueOf(Main.pines2Producidos));
                         Simulacion.pines2Progreso.setValue(pines2Producidos);
                     ensambladorPines2.release();
-                pines2Mutex.release();
-                Thread.sleep(Main.tiempo);
+                    pines2Mutex.release();
+                }
             } catch (Exception e) {
                 System.out.println(e);
         }

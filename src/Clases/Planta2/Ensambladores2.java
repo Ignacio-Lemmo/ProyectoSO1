@@ -51,38 +51,39 @@ public class Ensambladores2 extends Thread{
     public void run(){
         while(true){
             try{
-               pantallas2Ensamblador.acquire(1);
-               botones2Ensamblador.acquire(2);
-               pines2Ensamblador.acquire(1);
-               camaras2Ensamblador.acquire(2); 
+               if(contratados > 0){
+                pantallas2Ensamblador.acquire(1);
+                botones2Ensamblador.acquire(2);
+                pines2Ensamblador.acquire(1);
+                camaras2Ensamblador.acquire(2); 
 
-               pantallas2Mutex.acquire();
-               Main.pantallas2Producidas -= 1;
-               pantallas2Mutex.release();
-               pantallas2Productor.release(1);
+                pantallas2Mutex.acquire();
+                Main.pantallas2Producidas -= 1;
+                pantallas2Mutex.release();
+                pantallas2Productor.release(1);
 
-               botones2Mutex.acquire();
-               Main.botones2Producidos -= 2;
-               botones2Mutex.release();
-               botones2Productor.release(2);
+                botones2Mutex.acquire();
+                Main.botones2Producidos -= 2;
+                botones2Mutex.release();
+                botones2Productor.release(2);
 
-               pines2Mutex.acquire();
-               Main.pines2Producidos -= 1;
-               pines2Mutex.release();
-               pines2Productor.release(1);
+                pines2Mutex.acquire();
+                Main.pines2Producidos -= 1;
+                pines2Mutex.release();
+                pines2Productor.release(1);
 
-               camaras2Mutex.acquire();
-               Main.camaras2Producidas -= 2;
-               camaras2Mutex.release();
-               camaras2Productor.release(2);
+                camaras2Mutex.acquire();
+                Main.camaras2Producidas -= 2;
+                camaras2Mutex.release();
+                camaras2Productor.release(2);
 
-               Thread.sleep(Math.round(Main.tiempo/produccion));
-               
-               ensamblador2Mutex.acquire();
-               Main.producidos2 ++;
-               Simulacion.producidos2.setText(String.valueOf(Main.producidos2));
-               ensamblador2Mutex.release();
+                Thread.sleep(Math.round(Main.tiempo/(produccion)));
 
+                ensamblador2Mutex.acquire();
+                Main.producidos2 ++;
+                Simulacion.producidos2.setText(String.valueOf(Main.producidos2));
+                ensamblador2Mutex.release();
+               }
             }catch(Exception e){
                 System.out.println(e);
             }

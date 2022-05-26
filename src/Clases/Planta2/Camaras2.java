@@ -11,7 +11,7 @@ public class Camaras2 extends Thread {
     Semaphore camaras2Mutex;
     Semaphore ensambladorCamaras2;
     int contratados = Main.camaras2Contratados;
-    int produccion = 2;
+    double produccion = 1/2f;
     int sueldo = 4;
     
     //Declaración del constructor.
@@ -24,17 +24,19 @@ public class Camaras2 extends Thread {
     public void run(){
         while(true){
             try {
-                camaras2Mutex.acquire();
-                    camaras2.acquire();
-                        Main.camaras2Producidas ++;
-                        Simulacion.camaras2.setText(String.valueOf(Main.camaras2Producidas));
-                        Simulacion.camaras2Progreso.setValue(camaras2Producidas);
-                    ensambladorCamaras2.release();
-                camaras2Mutex.release();
-                Thread.sleep(Main.tiempo);
+                if(contratados > 0){
+                    Thread.sleep(Math.round(Main.tiempo/(produccion)));
+                    camaras2Mutex.acquire();
+                        camaras2.acquire();
+                            Main.camaras2Producidas ++;
+                            Simulacion.camaras2.setText(String.valueOf(Main.camaras2Producidas));
+                            Simulacion.camaras2Progreso.setValue(camaras2Producidas);
+                        ensambladorCamaras2.release();
+                    camaras2Mutex.release();
+                }
             } catch (Exception e) {
                 System.out.println(e);
-        }
+            }
         }
     }
 }
