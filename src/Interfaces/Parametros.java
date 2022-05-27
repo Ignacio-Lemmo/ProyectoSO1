@@ -91,7 +91,7 @@ public class Parametros extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         ensambladores1 = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("Productores de la planta 2 iniciales contratados:");
 

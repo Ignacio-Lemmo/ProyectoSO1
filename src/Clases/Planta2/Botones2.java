@@ -2,18 +2,20 @@ package Clases.Planta2;
 
 import Clases.Main;
 import static Clases.Main.botones2Producidos;
+import Interfaces.Planta2;
 import Interfaces.Simulacion;
 import java.util.concurrent.Semaphore;
 
 public class Botones2 extends Thread{
     
     //Declaración de variables.
-    Semaphore botones2;
-    Semaphore botones2Mutex;
-    Semaphore ensambladorBotones2;
+    public static volatile Semaphore botones2;
+    public static volatile Semaphore botones2Mutex;
+    public static volatile Semaphore ensambladorBotones2;
     int contratados = Main.botones2Contratados;
     int produccion = 2;
-    int sueldo = 4;
+    public static int sueldo = 4;
+    boolean contratado = true;
     
     //Declaración del constructor.
     public Botones2 (Semaphore botones2, Semaphore botones2Mutex, Semaphore ensambladorBotones2){
@@ -21,9 +23,15 @@ public class Botones2 extends Thread{
         this.botones2Mutex = botones2Mutex;
         this.ensambladorBotones2 = ensambladorBotones2;
     }
+    
+    //Setter de Contratado.
+    public void setContratado(boolean setter){
+        contratado = setter;
+    }
+    
     //Declaración de la ejecución/
     public void run(){
-        while(true){
+        while(contratado == true){
             try {
                 if(contratados > 0){
                     Thread.sleep(Math.round(Main.tiempo/(produccion)));
@@ -32,6 +40,8 @@ public class Botones2 extends Thread{
                             Main.botones2Producidos ++;
                             Simulacion.botones2.setText(String.valueOf(Main.botones2Producidos));
                             Simulacion.botones2Progreso.setValue(botones2Producidos);
+                            Planta2.botones2Progreso.setString(String.valueOf(Main.botones2Producidos));
+                            Planta2.botones2Progreso.setValue(botones2Producidos);
                         ensambladorBotones2.release();
                     botones2Mutex.release();
                 }

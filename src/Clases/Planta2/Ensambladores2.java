@@ -1,31 +1,33 @@
 package Clases.Planta2;
 
 import Clases.Main;
+import Interfaces.Planta2;
 import Interfaces.Simulacion;
 import java.util.concurrent.Semaphore;
 
 public class Ensambladores2 extends Thread{
     
     //Declariación de variables.
-    Semaphore pantallas2Ensamblador;
-    Semaphore botones2Ensamblador;
-    Semaphore pines2Ensamblador;
-    Semaphore camaras2Ensamblador;
+    public static volatile Semaphore pantallas2Ensamblador;
+    public static volatile Semaphore botones2Ensamblador;
+    public static volatile Semaphore pines2Ensamblador;
+    public static volatile Semaphore camaras2Ensamblador;
     
-    Semaphore pantallas2Mutex;
-    Semaphore botones2Mutex;
-    Semaphore pines2Mutex;
-    Semaphore camaras2Mutex;
+    public static volatile Semaphore pantallas2Mutex;
+    public static volatile Semaphore botones2Mutex;
+    public static volatile Semaphore pines2Mutex;
+    public static volatile Semaphore camaras2Mutex;
     
-    Semaphore pantallas2Productor;
-    Semaphore botones2Productor;
-    Semaphore pines2Productor;
-    Semaphore camaras2Productor;
+    public static volatile Semaphore pantallas2Productor;
+    public static volatile Semaphore botones2Productor;
+    public static volatile Semaphore pines2Productor;
+    public static volatile Semaphore camaras2Productor;
     
-    Semaphore ensamblador2Mutex;
+    public static volatile Semaphore ensamblador2Mutex;
     int contratados = Main.ensambladores2;
     double produccion = 1/2f;
-    int sueldo = 6;
+    public static int sueldo = 6;
+    boolean contratado = true;
     
     //Declaración del constructor.
     public Ensambladores2(Semaphore pantallas2Ensamblador, Semaphore botones2Ensamblador, Semaphore pines2Ensamblador, Semaphore camaras2Ensamblador, Semaphore pantallas2Mutex, Semaphore botones2Mutex, Semaphore pines2Mutex, Semaphore camaras2Mutex, Semaphore pantallas2Productor, Semaphore botones2Productor, Semaphore pines2Productor, Semaphore camaras2Productor, Semaphore ensamblador2Mutex){
@@ -47,9 +49,14 @@ public class Ensambladores2 extends Thread{
         this.ensamblador2Mutex = ensamblador2Mutex;
     }
     
+    //Setter de Contratado.
+    public void setContratado(boolean setter){
+        contratado = setter;
+    }
+    
     //Declaración de la ejecución.
     public void run(){
-        while(true){
+        while(contratado == true){
             try{
                if(contratados > 0){
                 pantallas2Ensamblador.acquire(1);
@@ -81,7 +88,14 @@ public class Ensambladores2 extends Thread{
 
                 ensamblador2Mutex.acquire();
                 Main.producidos2 ++;
+                Main.producidos2Total ++;
                 Simulacion.producidos2.setText(String.valueOf(Main.producidos2));
+                Planta2.producidos2.setText(String.valueOf(Main.producidos2));
+                Planta2.producidos2Total.setText(String.valueOf(Main.producidos2Total));
+                Main.ganancias += 600;
+                Main.gananciaTotal += 600;
+                Planta2.ganancia.setText(String.valueOf(Main.ganancias));
+                Planta2.gananciaTotal.setText(String.valueOf(Main.gananciaTotal));
                 ensamblador2Mutex.release();
                }
             }catch(Exception e){

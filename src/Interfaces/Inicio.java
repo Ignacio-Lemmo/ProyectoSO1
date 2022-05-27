@@ -1,7 +1,11 @@
 package Interfaces;
 
 import Clases.Main;
-import Clases.Planta1.Botones;
+import Clases.Planta1.Botones1;
+import Clases.Planta1.Camaras1;
+import Clases.Planta1.Ensambladores1;
+import Clases.Planta1.Pantallas1;
+import Clases.Planta1.Pines1;
 import Clases.Planta2.Botones2;
 import Clases.Planta2.Camaras2;
 import Clases.Planta2.Ensambladores2;
@@ -75,6 +79,10 @@ public class Inicio extends javax.swing.JFrame {
         Simulacion simulacion = new Simulacion();
         simulacion.setLocationRelativeTo(null);
         simulacion.setVisible(true);
+        
+        Planta2 planta2 = new Planta2();
+        planta2.setLocationRelativeTo(null);
+        planta2.setVisible(true);
 
         //Creación de Semáforos de Productores.
         Semaphore pantallas1Productor = new Semaphore(Main.pantallas1Almacen);
@@ -109,25 +117,30 @@ public class Inicio extends javax.swing.JFrame {
         Semaphore camaras2Ensamblador = new Semaphore(0);
         Semaphore ensamblador2Mutex = new Semaphore(1);
         
+        //Inicialización de productores.
+        for (int i = 0; i < Main.botones2Contratados; i++) {
+            Main.listaBotones2[i] = new Botones2(botones2Productor, botones2Mutex, botones2Ensamblador);
+            Main.listaBotones2[i].start();
+        }
+        for (int i = 0; i < Main.pantallas2Contratados; i++) {
+            Main.listaPantallas2[i] = new Pantallas2(pantallas2Productor, pantallas2Mutex, pantallas2Ensamblador);
+            Main.listaPantallas2[i].start();
+        }
+        for (int i = 0; i < Main.pines2Contratados; i++) {
+            Main.listaPines2[i] = new Pines2(pines2Productor, pines2Mutex, pines2Ensamblador);
+            Main.listaPines2[i].start();
+        }
+        for (int i = 0; i < Main.camaras2Contratados; i++) {
+            Main.listaCamaras2[i] = new Camaras2(camaras2Productor, camaras2Mutex, camaras2Ensamblador);
+            Main.listaCamaras2[i].start();
+        }
+        for (int i = 0; i < Main.ensambladores2; i++) {
+            Main.listaEnsambladores2[i] = new Ensambladores2(pantallas2Ensamblador, botones2Ensamblador, pines2Ensamblador, camaras2Ensamblador, pantallas2Mutex, botones2Mutex, pines2Mutex, camaras2Mutex, pantallas2Productor, botones2Productor, pines2Productor, camaras2Productor, ensamblador2Mutex);
+            Main.listaEnsambladores2[i].start();
+        }
+        
         //Creación de Semáforo del paso de dias.
         Semaphore diasMutex = new Semaphore(1);
-        
-        //Inicialización de productores.
-        Pantallas2 pantallas2Productor2 = new Pantallas2 (pantallas2Productor, pantallas2Mutex, pantallas2Ensamblador);
-        pantallas2Productor2.start();
-        
-        Botones2 botones2Productor2 = new Botones2(botones2Productor, botones2Mutex, botones2Ensamblador);
-        botones2Productor2.start();
-        
-        Pines2 pines2Productor2 = new Pines2 (pines2Productor, pines2Mutex, pines2Ensamblador);
-        pines2Productor2.start();
-        
-        Camaras2 camaras2Productor2 = new Camaras2 (camaras2Productor, camaras2Mutex, camaras2Ensamblador);
-        camaras2Productor2.start();
-        
-        //Inicializacion de Ensambladores.
-        Ensambladores2 ensambladores2 = new Ensambladores2(pantallas2Ensamblador, botones2Ensamblador, pines2Ensamblador, camaras2Ensamblador, pantallas2Mutex, botones2Mutex, pines2Mutex, camaras2Mutex, pantallas2Productor, botones2Productor, pines2Productor, camaras2Productor, ensamblador2Mutex);
-        ensambladores2.start();
         
         //Inicialización del Gerente y del Jefe.
         Jefe2 jefe2 = new Jefe2(diasMutex);
