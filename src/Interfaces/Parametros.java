@@ -401,6 +401,7 @@ public class Parametros extends javax.swing.JFrame {
             //Establecer nuevo tiempo.
             Main.tiempo = Integer.parseInt(tiempo.getText());
             Main.diasRestantes = Integer.parseInt(tiempoRestante.getText());
+            Main.entregas = Integer.parseInt(tiempoRestante.getText());
 
             //Establecer nuevos parametros de la planta 1.
             Main.pantallas1Contratados = Integer.parseInt(pantallas1.getText());
@@ -426,7 +427,7 @@ public class Parametros extends javax.swing.JFrame {
             Main.pines2Almacen = Integer.parseInt(pines2Almacen.getText());
             Main.camaras2Almacen = Integer.parseInt(camaras2Almacen.getText());
             
-            if(Main.tiempo>0 && Main.diasRestantes>0 && Main.pantallas1Contratados>0 && Main.botones1Contratados>0 && Main.pines1Contratados>0 && Main.camaras1Contratados>0 && Main.ensambladores1>0 && Main.pantallas1Almacen>0 && Main.botones1Almacen>0 && Main.pines1Almacen>0 && Main.camaras1Almacen>0 && Main.pantallas2Contratados>0 && Main.botones2Contratados>0 && Main.pines2Contratados>0 && Main.camaras2Contratados>0 && Main.ensambladores2>0 && Main.pantallas2Almacen>0 && Main.botones2Almacen>0 && Main.pines2Almacen>0 && Main.camaras2Almacen>0 ){
+            if(Main.tiempo>0 && Main.entregas>0 && Main.pantallas1Contratados>0 && Main.botones1Contratados>0 && Main.pines1Contratados>0 && Main.camaras1Contratados>0 && Main.ensambladores1>0 && Main.pantallas1Almacen>0 && Main.botones1Almacen>0 && Main.pines1Almacen>0 && Main.camaras1Almacen>0 && Main.pantallas2Contratados>0 && Main.botones2Contratados>0 && Main.pines2Contratados>0 && Main.camaras2Contratados>0 && Main.ensambladores2>0 && Main.pantallas2Almacen>0 && Main.botones2Almacen>0 && Main.pines2Almacen>0 && Main.camaras2Almacen>0 ){
                //Guardar cambios en el CSV.
                 CSVEL csvEscritor = new CSVEL();
                 csvEscritor.EscribirCsv(); 

@@ -35,15 +35,15 @@ public class Pines2 extends Thread{
             try {
                 if(contratados > 0){
                     Thread.sleep(Math.round(Main.tiempo/(produccion)));
-                    pines2Mutex.acquire();
+                    Main.pines2Producidos ++;
                     pines2.acquire();
-                        Main.pines2Producidos ++;
-                        Simulacion.pines2.setText(String.valueOf(Main.pines2Producidos));
-                        Simulacion.pines2Progreso.setValue(pines2Producidos);
-                        Planta2.pines2Progreso.setString(String.valueOf(Main.pines2Producidos));
-                        Planta2.pines2Progreso.setValue(pines2Producidos);
+                        pines2Mutex.acquire();
+                            Simulacion.pines2.setText(String.valueOf(Main.pines2Producidos));
+                            Simulacion.pines2Progreso.setValue(pines2Producidos);
+                            Planta2.pines2Progreso.setString(String.valueOf(Main.pines2Producidos));
+                            Planta2.pines2Progreso.setValue(pines2Producidos);
+                        pines2Mutex.release();
                     ensambladorPines2.release();
-                    pines2Mutex.release();
                 }
             } catch (Exception e) {
                 System.out.println(e);

@@ -21,6 +21,7 @@ public class Main {
     
     //Declaracion del tiempo.
     public static volatile int tiempo;
+    public static volatile int entregas;
     public static volatile int diasRestantes;
     public static volatile int dias;
     

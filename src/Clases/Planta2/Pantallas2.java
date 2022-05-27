@@ -35,15 +35,15 @@ public class Pantallas2 extends Thread{
             try {
                 if(contratados > 0){
                     Thread.sleep(Main.tiempo/(produccion));
-                    pantallas2Mutex.acquire();
-                        pantallas2.acquire();
+                    pantallas2.acquire();
+                        pantallas2Mutex.acquire();
                             Main.pantallas2Producidas ++;
                             Simulacion.pantallas2.setText(String.valueOf(Main.pantallas2Producidas));
                             Simulacion.pantallas2Progreso.setValue(pantallas2Producidas);
                             Planta2.pantallas2Progreso.setString(String.valueOf(Main.pantallas2Producidas));
                             Planta2.pantallas2Progreso.setValue(pantallas2Producidas);
-                        ensambladorPantallas2.release();
-                    pantallas2Mutex.release();
+                        pantallas2Mutex.release();
+                    ensambladorPantallas2.release();
                 }
             } catch (Exception e) {
                 System.out.println(e);

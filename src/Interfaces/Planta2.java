@@ -138,7 +138,7 @@ public class Planta2 extends javax.swing.JFrame {
         camaras2Progreso.setBackground(new java.awt.Color(204, 204, 204));
         camaras2Progreso.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         camaras2Progreso.setForeground(new java.awt.Color(0, 0, 0));
-        camaras2Progreso.setMaximum(Main.botones2Almacen);
+        camaras2Progreso.setMaximum(Main.camaras2Almacen);
         camaras2Progreso.setString(String.valueOf(Main.camaras2Producidas)
         );
         camaras2Progreso.setStringPainted(true);

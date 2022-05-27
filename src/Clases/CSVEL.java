@@ -38,6 +38,7 @@ public class CSVEL {
             Main.pines2Almacen = Integer.parseInt(data[17]);
             Main.camaras2Almacen = Integer.parseInt(data[18]);
             Main.diasRestantes = Integer.parseInt(data[19]);
+            Main.entregas = Integer.parseInt(data[19]);
             
             }catch(Exception e){
               System.out.println(e);
@@ -47,7 +48,7 @@ public class CSVEL {
     public static void EscribirCsv(){
         try {
             FileWriter csvEscritor = new FileWriter("./Parámetros.csv");
-            csvEscritor.write(Main.tiempo + "\n" + Main.pantallas1Contratados + "\n" + Main.botones1Contratados + "\n" + Main.pines1Contratados + "\n" + Main.camaras1Contratados + "\n" + Main.ensambladores1 + "\n" + Main.pantallas2Contratados + "\n" + Main.botones2Contratados + "\n" + Main.pines2Contratados + "\n" + Main.camaras2Contratados + "\n" + Main.ensambladores2 + "\n" + Main.pantallas1Almacen + "\n" + Main.botones1Almacen + "\n" + Main.pines1Almacen + "\n" + Main.camaras1Almacen + "\n" + Main.pantallas2Almacen + "\n" + Main.botones2Almacen + "\n" + Main.pines2Almacen + "\n" + Main.camaras2Almacen + "\n" + Main.diasRestantes);
+            csvEscritor.write(Main.tiempo + "\n" + Main.pantallas1Contratados + "\n" + Main.botones1Contratados + "\n" + Main.pines1Contratados + "\n" + Main.camaras1Contratados + "\n" + Main.ensambladores1 + "\n" + Main.pantallas2Contratados + "\n" + Main.botones2Contratados + "\n" + Main.pines2Contratados + "\n" + Main.camaras2Contratados + "\n" + Main.ensambladores2 + "\n" + Main.pantallas1Almacen + "\n" + Main.botones1Almacen + "\n" + Main.pines1Almacen + "\n" + Main.camaras1Almacen + "\n" + Main.pantallas2Almacen + "\n" + Main.botones2Almacen + "\n" + Main.pines2Almacen + "\n" + Main.camaras2Almacen + "\n" + Main.entregas);
             csvEscritor.flush();
             csvEscritor.close();
         } catch (Exception e){

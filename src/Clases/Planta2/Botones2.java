@@ -35,15 +35,15 @@ public class Botones2 extends Thread{
             try {
                 if(contratados > 0){
                     Thread.sleep(Math.round(Main.tiempo/(produccion)));
-                    botones2Mutex.acquire();
-                        botones2.acquire();
+                    botones2.acquire();
+                        botones2Mutex.acquire();
                             Main.botones2Producidos ++;
                             Simulacion.botones2.setText(String.valueOf(Main.botones2Producidos));
                             Simulacion.botones2Progreso.setValue(botones2Producidos);
                             Planta2.botones2Progreso.setString(String.valueOf(Main.botones2Producidos));
                             Planta2.botones2Progreso.setValue(botones2Producidos);
-                        ensambladorBotones2.release();
-                    botones2Mutex.release();
+                        botones2Mutex.release();
+                    ensambladorBotones2.release();
                 }
             } catch (Exception e) {
                 System.out.println(e);

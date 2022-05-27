@@ -110,6 +110,7 @@ public class Inicio extends javax.swing.JFrame {
         Semaphore botones1Ensamblador = new Semaphore(0);
         Semaphore pines1Ensamblador = new Semaphore(0);
         Semaphore camaras1Ensamblador = new Semaphore(0);
+        Semaphore ensamblador1Mutex = new Semaphore(1);
         
         Semaphore pantallas2Ensamblador = new Semaphore(0);
         Semaphore botones2Ensamblador = new Semaphore(0);

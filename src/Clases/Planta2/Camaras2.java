@@ -34,15 +34,15 @@ public class Camaras2 extends Thread {
             try {
                 if(contratados > 0){
                     Thread.sleep(Math.round(Main.tiempo/(produccion)));
-                    camaras2Mutex.acquire();
-                        camaras2.acquire();
+                    camaras2.acquire();
+                        camaras2Mutex.acquire();
                             Main.camaras2Producidas ++;
                             Simulacion.camaras2.setText(String.valueOf(Main.camaras2Producidas));
                             Simulacion.camaras2Progreso.setValue(camaras2Producidas);
                             Planta2.camaras2Progreso.setString(String.valueOf(Main.camaras2Producidas));
                             Planta2.camaras2Progreso.setValue(camaras2Producidas);
-                        ensambladorCamaras2.release();
-                    camaras2Mutex.release();
+                        camaras2Mutex.release();
+                    ensambladorCamaras2.release();
                 }
             } catch (Exception e) {
                 System.out.println(e);

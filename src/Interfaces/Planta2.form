@@ -454,7 +454,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="maximum" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="Main.botones2Almacen" type="code"/>
+          <Connection code="Main.camaras2Almacen" type="code"/>
         </Property>
         <Property name="string" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
           <Connection code="String.valueOf(Main.camaras2Producidas)&#xa;    " type="code"/>
