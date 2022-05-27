@@ -59,28 +59,22 @@ public class Ensambladores2 extends Thread{
         while(contratado == true){
             try{
                if(contratados > 0){
-                System.out.println("2");
                 pantallas2Ensamblador.acquire(1);
                 botones2Ensamblador.acquire(2);
                 pines2Ensamblador.acquire(1);
                 camaras2Ensamblador.acquire(2); 
-                   System.out.println("3");
                 pantallas2Mutex.acquire();
-                   System.out.println("9");
                 Main.pantallas2Producidas -= 1;
                 pantallas2Mutex.release();
                 pantallas2Productor.release(1);
-                   System.out.println("4");
                 botones2Mutex.acquire();
                 Main.botones2Producidos -= 2;
                 botones2Mutex.release();
                 botones2Productor.release(2);
-                   System.out.println("5");
                 pines2Mutex.acquire();
                 Main.pines2Producidos -= 1;
                 pines2Mutex.release();
                 pines2Productor.release(1);
-                   System.out.println("6");
                 camaras2Mutex.acquire();
                 Main.camaras2Producidas -= 2;
                 camaras2Mutex.release();
@@ -89,7 +83,6 @@ public class Ensambladores2 extends Thread{
                 Thread.sleep(Math.round(Main.tiempo/(produccion)));
 
                 ensamblador2Mutex.acquire();
-                System.out.println("entro");
                 Main.producidos2 ++;
                 Main.producidos2Total ++;
                 Simulacion.producidos2.setText(String.valueOf(Main.producidos2));

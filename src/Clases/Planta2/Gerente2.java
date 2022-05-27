@@ -34,7 +34,6 @@ public class Gerente2 extends Thread {
                 }else{
                     Planta2.gerente2.setText("Vigilando");
                     if(Main.jefeEstado == 1){
-                        JOptionPane.showMessageDialog(null, "El Jefe estaba Jugando, se le ha reducido $2 de su sueldo.");
                         Main.jefe2Gastos -= 2;
                     }
                 }
