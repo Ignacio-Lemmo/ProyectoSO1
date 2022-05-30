@@ -42,9 +42,7 @@ public class Main {
     public static volatile int ensambladores2;
     
     //Declaracion del Jefe y el Gerente.
-    public static volatile int jefe = 1;
-    public static volatile int jefeEstado;
-    public static volatile int gerente = 1;
+    public static volatile int jefe2Estado;
     
     //Declaracion de elementos.
     public static volatile int pantallas1Producidas = 0;
@@ -86,6 +84,7 @@ public class Main {
     public static volatile int ensambladores2Gastos = 0;
     public static volatile int gerente2Gastos = 0;
     public static volatile int jefe2Gastos = 0;
+    public static volatile int jefe2Pilladas = 0;
     
     //Creación de Lista de Productores.
     public static volatile Botones1 listaBotones1[] = new Botones1[15];

@@ -309,7 +309,7 @@ public class Planta2Personal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void contratarBotones2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarBotones2ActionPerformed
-        if(Main.botones2Contratados < 15 && Main.botones2Contratados > 0){
+        if(Main.botones2Contratados < 15 && Main.botones2Contratados > 0 && (Main.botones2Contratados + Main.camaras2Contratados + Main.pantallas2Contratados + Main.pines2Contratados + Main.ensambladores2 < 15)){
             Main.botones2Contratados ++;
             Main.listaBotones2[Main.botones2Contratados-1] = new Botones2(Main.listaBotones2[0].botones2, Main.listaBotones2[0].botones2Mutex, Main.listaBotones2[0].ensambladorBotones2);
             Main.listaBotones2[Main.botones2Contratados-1].start();
@@ -318,7 +318,9 @@ public class Planta2Personal extends javax.swing.JFrame {
 
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
-         }
+         }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarBotones2ActionPerformed
 
     private void despedirBotones2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirBotones2ActionPerformed
@@ -330,11 +332,13 @@ public class Planta2Personal extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de botones ya que despedirán al Gerente.");
         }
     }//GEN-LAST:event_despedirBotones2ActionPerformed
 
     private void contratarPantallas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarPantallas2ActionPerformed
-        if(Main.pantallas2Contratados < 15 && Main.pantallas2Contratados > 0){
+        if(Main.pantallas2Contratados < 15 && Main.pantallas2Contratados > 0 && (Main.botones2Contratados + Main.camaras2Contratados + Main.pantallas2Contratados + Main.pines2Contratados + Main.ensambladores2 < 15)){
             Main.pantallas2Contratados ++;
             Main.listaPantallas2[Main.pantallas2Contratados-1] = new Pantallas2(Main.listaPantallas2[0].pantallas2, Main.listaPantallas2[0].pantallas2Mutex, Main.listaPantallas2[0].ensambladorPantallas2);
             Main.listaPantallas2[Main.pantallas2Contratados-1].start();
@@ -343,7 +347,9 @@ public class Planta2Personal extends javax.swing.JFrame {
 
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
-         }
+         }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarPantallas2ActionPerformed
 
     private void despedirPantallas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirPantallas2ActionPerformed
@@ -355,11 +361,13 @@ public class Planta2Personal extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productoes de pantallas ya que despedirán al Gerente.");
         }
     }//GEN-LAST:event_despedirPantallas2ActionPerformed
 
     private void contratarPines2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarPines2ActionPerformed
-        if(Main.pines2Contratados < 15 && Main.pines2Contratados > 0){
+        if(Main.pines2Contratados < 15 && Main.pines2Contratados > 0 && (Main.botones2Contratados + Main.camaras2Contratados + Main.pantallas2Contratados + Main.pines2Contratados + Main.ensambladores2 < 15)){
             Main.pines2Contratados ++;
             Main.listaPines2[Main.pines2Contratados-1] = new Pines2(Main.listaPines2[0].pines2, Main.listaPines2[0].pines2Mutex, Main.listaPines2[0].ensambladorPines2);
             Main.listaPines2[Main.pines2Contratados-1].start();
@@ -368,7 +376,9 @@ public class Planta2Personal extends javax.swing.JFrame {
 
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
-         }
+         }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarPines2ActionPerformed
 
     private void despedirPines2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirPines2ActionPerformed
@@ -380,11 +390,13 @@ public class Planta2Personal extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de pines ya que despedirán al Gerente.");
         }
     }//GEN-LAST:event_despedirPines2ActionPerformed
 
     private void contratarCamaras2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarCamaras2ActionPerformed
-        if(Main.camaras2Contratados < 15 && Main.camaras2Contratados > 0){
+        if(Main.camaras2Contratados < 15 && Main.camaras2Contratados > 0 && (Main.botones2Contratados + Main.camaras2Contratados + Main.pantallas2Contratados + Main.pines2Contratados + Main.ensambladores2 < 15)){
             Main.camaras2Contratados ++;
             Main.listaCamaras2[Main.camaras2Contratados-1] = new Camaras2(Main.listaCamaras2[0].camaras2, Main.listaCamaras2[0].camaras2Mutex, Main.listaCamaras2[0].ensambladorCamaras2);
             Main.listaCamaras2[Main.camaras2Contratados-1].start();
@@ -393,7 +405,9 @@ public class Planta2Personal extends javax.swing.JFrame {
 
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
-         }
+         }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarCamaras2ActionPerformed
 
     private void despedirCamaras2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirCamaras2ActionPerformed
@@ -405,11 +419,13 @@ public class Planta2Personal extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de cámaras ya que despedirán al Gerente.");
         }
     }//GEN-LAST:event_despedirCamaras2ActionPerformed
 
     private void contratarEnsambladores2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarEnsambladores2ActionPerformed
-        if(Main.ensambladores2 < 15 && Main.ensambladores2 > 0){
+        if(Main.ensambladores2 < 15 && Main.ensambladores2 > 0 && (Main.botones2Contratados + Main.camaras2Contratados + Main.pantallas2Contratados + Main.pines2Contratados + Main.ensambladores2 < 15)){
             Main.ensambladores2 ++;
             Main.listaEnsambladores2[Main.ensambladores2-1] = new Ensambladores2(Main.listaEnsambladores2[0].pantallas2Ensamblador, Main.listaEnsambladores2[0].botones2Ensamblador, Main.listaEnsambladores2[0].pines2Ensamblador, Main.listaEnsambladores2[0].camaras2Ensamblador, Main.listaEnsambladores2[0].pantallas2Mutex, Main.listaEnsambladores2[0].botones2Mutex, Main.listaEnsambladores2[0].pines2Mutex, Main.listaEnsambladores2[0].camaras2Mutex, Main.listaEnsambladores2[0].pantallas2Productor, Main.listaEnsambladores2[0].botones2Productor, Main.listaEnsambladores2[0].pines2Productor, Main.listaEnsambladores2[0].camaras2Productor, Main.listaEnsambladores2[0].ensamblador2Mutex);
             Main.listaEnsambladores2[Main.ensambladores2-1].start();
@@ -418,6 +434,8 @@ public class Planta2Personal extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
         }
     }//GEN-LAST:event_contratarEnsambladores2ActionPerformed
 
@@ -430,6 +448,8 @@ public class Planta2Personal extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los ensambladores ya que despedirán al Gerente.");
         }
     }//GEN-LAST:event_despedirEnsambladores2ActionPerformed
 

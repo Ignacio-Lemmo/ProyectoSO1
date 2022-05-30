@@ -85,7 +85,6 @@ public class Ensambladores2 extends Thread{
                 ensamblador2Mutex.acquire();
                 Main.producidos2 ++;
                 Main.producidos2Total ++;
-                Simulacion.producidos2.setText(String.valueOf(Main.producidos2));
                 Planta2.producidos2.setText(String.valueOf(Main.producidos2));
                 Planta2.producidos2Total.setText(String.valueOf(Main.producidos2Total));
                 Main.ganancias += 600;

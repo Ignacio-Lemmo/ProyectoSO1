@@ -38,8 +38,6 @@ public class Pantallas2 extends Thread{
                     pantallas2.acquire();
                         pantallas2Mutex.acquire();
                             Main.pantallas2Producidas ++;
-                            Simulacion.pantallas2.setText(String.valueOf(Main.pantallas2Producidas));
-                            Simulacion.pantallas2Progreso.setValue(pantallas2Producidas);
                             Planta2.pantallas2Progreso.setString(String.valueOf(Main.pantallas2Producidas));
                             Planta2.pantallas2Progreso.setValue(pantallas2Producidas);
                         pantallas2Mutex.release();

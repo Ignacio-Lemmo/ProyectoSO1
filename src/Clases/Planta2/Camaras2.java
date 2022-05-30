@@ -37,8 +37,6 @@ public class Camaras2 extends Thread {
                     camaras2.acquire();
                         camaras2Mutex.acquire();
                             Main.camaras2Producidas ++;
-                            Simulacion.camaras2.setText(String.valueOf(Main.camaras2Producidas));
-                            Simulacion.camaras2Progreso.setValue(camaras2Producidas);
                             Planta2.camaras2Progreso.setString(String.valueOf(Main.camaras2Producidas));
                             Planta2.camaras2Progreso.setValue(camaras2Producidas);
                         camaras2Mutex.release();

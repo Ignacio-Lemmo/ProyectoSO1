@@ -38,8 +38,6 @@ public class Botones2 extends Thread{
                     botones2.acquire();
                         botones2Mutex.acquire();
                             Main.botones2Producidos ++;
-                            Simulacion.botones2.setText(String.valueOf(Main.botones2Producidos));
-                            Simulacion.botones2Progreso.setValue(botones2Producidos);
                             Planta2.botones2Progreso.setString(String.valueOf(Main.botones2Producidos));
                             Planta2.botones2Progreso.setValue(botones2Producidos);
                         botones2Mutex.release();

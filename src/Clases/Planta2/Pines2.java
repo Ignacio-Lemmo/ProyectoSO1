@@ -38,8 +38,6 @@ public class Pines2 extends Thread{
                     Main.pines2Producidos ++;
                     pines2.acquire();
                         pines2Mutex.acquire();
-                            Simulacion.pines2.setText(String.valueOf(Main.pines2Producidos));
-                            Simulacion.pines2Progreso.setValue(pines2Producidos);
                             Planta2.pines2Progreso.setString(String.valueOf(Main.pines2Producidos));
                             Planta2.pines2Progreso.setValue(pines2Producidos);
                         pines2Mutex.release();
