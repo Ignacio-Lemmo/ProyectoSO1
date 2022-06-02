@@ -51,17 +51,17 @@
                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jefe2" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
-                                      <Component id="jefe2Gastos" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Component id="jefe1" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Component id="jefe1Gastos" min="-2" pref="110" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="pilladas2" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
+                                  <Component id="pilladas1" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jLabel17" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel25" min="-2" pref="124" max="-2" attributes="0"/>
                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                              <Component id="ensambladores2Gastos" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="ensambladores1Gastos" min="-2" pref="30" max="-2" attributes="0"/>
                               <EmptySpace min="99" pref="99" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
@@ -69,12 +69,12 @@
                                           <Group type="102" alignment="1" attributes="0">
                                               <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                                              <Component id="gerente2" min="-2" pref="90" max="-2" attributes="0"/>
+                                              <Component id="gerente1" min="-2" pref="90" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <Component id="jLabel29" min="-2" pref="68" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                              <Component id="gerente2Gastos" min="-2" pref="90" max="-2" attributes="0"/>
+                                              <Component id="gerente1Gastos" min="-2" pref="90" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="69" pref="69" max="-2" attributes="0"/>
@@ -82,23 +82,23 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                              <Component id="diasRestantes" min="-2" pref="30" max="-2" attributes="0"/>
+                                              <Component id="diasRestantes1" min="-2" pref="30" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel19" min="-2" pref="106" max="-2" attributes="0"/>
                                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                              <Component id="dias" min="-2" pref="30" max="-2" attributes="0"/>
+                                              <Component id="dias1" min="-2" pref="30" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel26" min="-2" pref="108" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                      <Component id="ganancia" min="-2" pref="47" max="-2" attributes="0"/>
+                                      <Component id="ganancia1" min="-2" pref="47" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                                       <Component id="jLabel27" min="-2" pref="153" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="gananciaTotal" min="-2" pref="47" max="-2" attributes="0"/>
+                                      <Component id="ganancia1Total" min="-2" pref="47" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -108,15 +108,15 @@
                       <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                      <Component id="ensambladores2" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="ensambladores1" min="-2" pref="30" max="-2" attributes="0"/>
                       <EmptySpace min="99" pref="99" max="-2" attributes="0"/>
                       <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      <Component id="producidos2" min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="producidos1" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="producidos2Total" min="-2" pref="43" max="-2" attributes="0"/>
+                      <Component id="producidos1Total" min="-2" pref="43" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
@@ -130,13 +130,13 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
-                      <Component id="botones2Progreso" min="-2" max="-2" attributes="0"/>
+                      <Component id="botones1Progreso" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="pantallas2Progreso" min="-2" max="-2" attributes="0"/>
+                      <Component id="pantallas1Progreso" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="pines2Progreso" min="-2" max="-2" attributes="0"/>
+                      <Component id="pines1Progreso" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="camaras2Progreso" min="-2" max="-2" attributes="0"/>
+                      <Component id="camaras1Progreso" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="306" pref="306" max="-2" attributes="0"/>
@@ -158,8 +158,8 @@
                       </Group>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="botones2Gastos" pref="47" max="32767" attributes="0"/>
-                          <Component id="botones2" max="32767" attributes="0"/>
+                          <Component id="botones1Gastos" pref="47" max="32767" attributes="0"/>
+                          <Component id="botones1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -168,8 +168,8 @@
                       </Group>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pantallas2Gastos" max="32767" attributes="0"/>
-                          <Component id="pantallas2" min="-2" pref="47" max="-2" attributes="0"/>
+                          <Component id="pantallas1Gastos" max="32767" attributes="0"/>
+                          <Component id="pantallas1" min="-2" pref="47" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -188,8 +188,8 @@
                       </Group>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="camaras2Gastos" max="32767" attributes="0"/>
-                          <Component id="camaras2" min="-2" pref="47" max="-2" attributes="0"/>
+                          <Component id="camaras1Gastos" max="32767" attributes="0"/>
+                          <Component id="camaras1" min="-2" pref="47" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -200,7 +200,7 @@
                               <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                               <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="gananciasNetas" min="-2" pref="47" max="-2" attributes="0"/>
+                              <Component id="gananciasNetas1" min="-2" pref="47" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -223,10 +223,10 @@
               </Group>
               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="botones2Progreso" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="pantallas2Progreso" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="pines2Progreso" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="camaras2Progreso" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="botones1Progreso" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="pantallas1Progreso" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="pines1Progreso" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="camaras1Progreso" min="-2" pref="45" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="39" pref="39" max="-2" attributes="0"/>
               <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
@@ -240,9 +240,9 @@
                               <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="botones2" min="-2" max="-2" attributes="0"/>
+                              <Component id="botones1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                              <Component id="botones2Gastos" min="-2" max="-2" attributes="0"/>
+                              <Component id="botones1Gastos" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -255,9 +255,9 @@
                               <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="camaras2" min="-2" max="-2" attributes="0"/>
+                              <Component id="camaras1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                              <Component id="camaras2Gastos" min="-2" max="-2" attributes="0"/>
+                              <Component id="camaras1Gastos" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
@@ -265,14 +265,14 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="pantallas2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="pantallas1" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                      <Component id="pantallas2Gastos" min="-2" max="-2" attributes="0"/>
+                                      <Component id="pantallas1Gastos" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
@@ -289,28 +289,28 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                  <Component id="ensambladores2" min="-2" max="-2" attributes="0"/>
+                  <Component id="ensambladores1" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                  <Component id="producidos2" min="-2" max="-2" attributes="0"/>
+                  <Component id="producidos1" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="producidos2Total" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="producidos1Total" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
-                  <Component id="ensambladores2Gastos" min="-2" max="-2" attributes="0"/>
+                  <Component id="ensambladores1Gastos" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                  <Component id="ganancia" min="-2" max="-2" attributes="0"/>
+                  <Component id="ganancia1" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="gananciaTotal" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ganancia1Total" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
@@ -322,33 +322,33 @@
                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jefe2Gastos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jefe1Gastos" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jefe2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jefe1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="gerente2" min="-2" max="-2" attributes="0"/>
+                          <Component id="gerente1" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                  <Component id="diasRestantes" min="-2" max="-2" attributes="0"/>
+                                  <Component id="diasRestantes1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                          <Component id="dias" min="-2" max="-2" attributes="0"/>
+                          <Component id="dias1" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
-                                  <Component id="gerente2Gastos" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gerente1Gastos" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -357,12 +357,12 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="pilladas2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="pilladas1" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="57" max="32767" attributes="0"/>
+              <EmptySpace pref="63" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                  <Component id="gananciasNetas" min="-2" max="-2" attributes="0"/>
+                  <Component id="gananciasNetas1" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
@@ -383,7 +383,7 @@
         <Property name="text" type="java.lang.String" value="Ensambladores"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="botones2Progreso">
+    <Component class="javax.swing.JProgressBar" name="botones1Progreso">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -417,7 +417,7 @@
         <Property name="text" type="java.lang.String" value="Botones:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="pantallas2Progreso">
+    <Component class="javax.swing.JProgressBar" name="pantallas1Progreso">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -451,7 +451,7 @@
         <Property name="text" type="java.lang.String" value="Pantallas:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="pines2Progreso">
+    <Component class="javax.swing.JProgressBar" name="pines1Progreso">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -485,7 +485,7 @@
         <Property name="text" type="java.lang.String" value="Pines:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="camaras2Progreso">
+    <Component class="javax.swing.JProgressBar" name="camaras1Progreso">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -574,7 +574,7 @@
         <Property name="text" type="java.lang.String" value="C&#xe1;maras:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="botones2">
+    <Component class="javax.swing.JLabel" name="botones1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -588,7 +588,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="pantallas2">
+    <Component class="javax.swing.JLabel" name="pantallas1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -602,7 +602,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="camaras2">
+    <Component class="javax.swing.JLabel" name="camaras1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -641,7 +641,7 @@
         <Property name="text" type="java.lang.String" value="Productores"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="ensambladores2">
+    <Component class="javax.swing.JLabel" name="ensambladores1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -666,7 +666,7 @@
         <Property name="text" type="java.lang.String" value="Ensambladores:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="producidos2">
+    <Component class="javax.swing.JLabel" name="producidos1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -691,7 +691,7 @@
         <Property name="text" type="java.lang.String" value="Ensamblados:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="producidos2Total">
+    <Component class="javax.swing.JLabel" name="producidos1Total">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -749,7 +749,7 @@
         <Property name="text" type="java.lang.String" value="Gerente:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="dias">
+    <Component class="javax.swing.JLabel" name="dias1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -774,7 +774,7 @@
         <Property name="text" type="java.lang.String" value="D&#xed;as Total:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="diasRestantes">
+    <Component class="javax.swing.JLabel" name="diasRestantes1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -799,7 +799,7 @@
         <Property name="text" type="java.lang.String" value="D&#xed;as Entrega:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jefe2">
+    <Component class="javax.swing.JLabel" name="jefe1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -813,7 +813,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="gerente2">
+    <Component class="javax.swing.JLabel" name="gerente1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -827,7 +827,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="73"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="botones2Gastos">
+    <Component class="javax.swing.JLabel" name="botones1Gastos">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -877,7 +877,7 @@
         <Property name="text" type="java.lang.String" value="Gastos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="pantallas2Gastos">
+    <Component class="javax.swing.JLabel" name="pantallas1Gastos">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -902,7 +902,7 @@
         <Property name="text" type="java.lang.String" value="Gastos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="camaras2Gastos">
+    <Component class="javax.swing.JLabel" name="camaras1Gastos">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -927,7 +927,7 @@
         <Property name="text" type="java.lang.String" value="Gastos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="ensambladores2Gastos">
+    <Component class="javax.swing.JLabel" name="ensambladores1Gastos">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -952,7 +952,7 @@
         <Property name="text" type="java.lang.String" value="Gastos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="ganancia">
+    <Component class="javax.swing.JLabel" name="ganancia1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -977,7 +977,7 @@
         <Property name="text" type="java.lang.String" value="Ganancia:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="gananciaTotal">
+    <Component class="javax.swing.JLabel" name="ganancia1Total">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1002,7 +1002,7 @@
         <Property name="text" type="java.lang.String" value="Ganancia Total:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jefe2Gastos">
+    <Component class="javax.swing.JLabel" name="jefe1Gastos">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1027,7 +1027,7 @@
         <Property name="text" type="java.lang.String" value="Gastos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="gerente2Gastos">
+    <Component class="javax.swing.JLabel" name="gerente1Gastos">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1052,7 +1052,7 @@
         <Property name="text" type="java.lang.String" value="Gastos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="gananciasNetas">
+    <Component class="javax.swing.JLabel" name="gananciasNetas1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1094,7 +1094,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="pilladas2">
+    <Component class="javax.swing.JLabel" name="pilladas1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>

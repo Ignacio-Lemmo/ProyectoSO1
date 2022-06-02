@@ -17,6 +17,7 @@ import java.util.concurrent.Semaphore;
 
 public class Inicio extends javax.swing.JFrame {
     public static Planta2 planta2 = new Planta2();
+    public static Planta1 planta1 = new Planta1();
     public Inicio() {
         initComponents();
         
