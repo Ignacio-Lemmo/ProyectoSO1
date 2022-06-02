@@ -16,12 +16,12 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author mvlop
+ * @author ijlem
  */
 public class Planta1Personal1 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Planta1Personal
+     * Creates new form Planta2Personal
      */
     public Planta1Personal1() {
         initComponents();
@@ -309,43 +309,148 @@ public class Planta1Personal1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void contratarBotones1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarBotones1ActionPerformed
-        //TODO
+        if(Main.botones1Contratados < 15 && Main.botones1Contratados > 0 && (Main.botones1Contratados + Main.camaras1Contratados + Main.pantallas1Contratados + Main.pines1Contratados + Main.ensambladores1 < 15)){
+            Main.botones1Contratados ++;
+            Main.listaBotones1[Main.botones1Contratados-1] = new Botones1(Main.listaBotones1[0].botones1, Main.listaBotones1[0].botones1mut, Main.listaBotones1[0].botones1em);
+            Main.listaBotones1[Main.botones1Contratados-1].start();
+            botones1.setText(String.valueOf(Main.botones1Contratados));
+            Planta1.botones1.setText(String.valueOf(Main.botones1Contratados));
+
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+         }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarBotones1ActionPerformed
 
     private void despedirBotones1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirBotones1ActionPerformed
-        //TODO
+        if(Main.botones1Contratados <= 15 && Main.botones1Contratados > 1){
+            Main.botones1Contratados --;
+            Main.listaBotones2[Main.botones1Contratados-1].setContratado(false);
+            botones1.setText(String.valueOf(Main.botones1Contratados));
+            Planta1.botones1.setText(String.valueOf(Main.botones1Contratados));
+            
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de botones ya que despedirán al Gerente.");
+        }
     }//GEN-LAST:event_despedirBotones1ActionPerformed
 
     private void contratarPantallas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarPantallas1ActionPerformed
-        //TODO
+        if(Main.pantallas1Contratados < 15 && Main.pantallas1Contratados > 0 && (Main.botones1Contratados + Main.camaras1Contratados + Main.pantallas1Contratados + Main.pines1Contratados + Main.ensambladores1 < 15)){
+            Main.pantallas1Contratados ++;
+            Main.listaPantallas1[Main.pantallas1Contratados-1] = new Pantallas1(Main.listaPantallas1[0].pantallas1, Main.listaPantallas1[0].pantallas1mut, Main.listaPantallas1[0].pantallas1em);
+            Main.listaPantallas1[Main.pantallas1Contratados-1].start();
+            pantallas1.setText(String.valueOf(Main.pantallas1Contratados));
+            Planta1.pantallas1.setText(String.valueOf(Main.pantallas1Contratados));
+
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+         }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarPantallas1ActionPerformed
 
     private void despedirPantallas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirPantallas1ActionPerformed
-        //TODO
+        if(Main.pantallas1Contratados <= 15 && Main.pantallas1Contratados > 1){
+            Main.pantallas1Contratados --;
+            Main.listaPantallas1[Main.pantallas1Contratados-1].setContratado(false);
+            pantallas1.setText(String.valueOf(Main.pantallas1Contratados));
+            Planta1.pantallas1.setText(String.valueOf(Main.pantallas1Contratados));
+            
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productoes de pantallas ya que despedirán al Gerente.");
+        }
     }//GEN-LAST:event_despedirPantallas1ActionPerformed
 
     private void contratarPines1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarPines1ActionPerformed
-        //TODO
+        if(Main.pines1Contratados < 15 && Main.pines1Contratados > 0 && (Main.botones1Contratados + Main.camaras1Contratados + Main.pantallas1Contratados + Main.pines1Contratados + Main.ensambladores1 < 15)){
+            Main.pines1Contratados ++;
+            Main.listaPines1[Main.pines1Contratados-1] = new Pines1(Main.listaPines1[0].pines1, Main.listaPines1[0].pines1mut, Main.listaPines1[0].pines1em);
+            Main.listaPines1[Main.pines1Contratados-1].start();
+            pines1.setText(String.valueOf(Main.pines1Contratados));
+            Planta1.pines1.setText(String.valueOf(Main.pines1Contratados));
+
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+         }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarPines1ActionPerformed
 
     private void despedirPines1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirPines1ActionPerformed
-        //TODO
+        if(Main.pines1Contratados <= 15 && Main.pines1Contratados > 1){
+            Main.pines1Contratados --;
+            Main.listaCamaras1[Main.pines1Contratados-1].setContratado(false);
+            pines1.setText(String.valueOf(Main.pines1Contratados));
+            Planta1.pines1.setText(String.valueOf(Main.pines1Contratados));
+            
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de pines ya que despedirán al Gerente.");
+        }
     }//GEN-LAST:event_despedirPines1ActionPerformed
 
     private void contratarCamaras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarCamaras1ActionPerformed
-        //TODO
+        if(Main.camaras1Contratados < 15 && Main.camaras1Contratados > 0 && (Main.botones1Contratados + Main.camaras1Contratados + Main.pantallas1Contratados + Main.pines1Contratados + Main.ensambladores1 < 15)){
+            Main.camaras1Contratados ++;
+            Main.listaCamaras1[Main.camaras1Contratados-1] = new Camaras1(Main.listaCamaras1[0].camaras1, Main.listaCamaras1[0].camaras1mut, Main.listaCamaras1[0].camaras1em);
+            Main.listaCamaras1[Main.camaras1Contratados-1].start();
+            camaras1.setText(String.valueOf(Main.camaras1Contratados));
+            Planta1.camaras1.setText(String.valueOf(Main.camaras1Contratados));
+
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+         }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarCamaras1ActionPerformed
 
     private void despedirCamaras1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirCamaras1ActionPerformed
-        //TODO
+        if(Main.camaras1Contratados <= 15 && Main.camaras1Contratados > 1){
+            Main.camaras1Contratados --;
+            Main.listaCamaras1[Main.camaras1Contratados-1].setContratado(false);
+            camaras1.setText(String.valueOf(Main.camaras1Contratados));
+            Planta1.camaras1.setText(String.valueOf(Main.camaras1Contratados));
+            
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de cámaras ya que despedirán al Gerente.");
+        }
     }//GEN-LAST:event_despedirCamaras1ActionPerformed
 
     private void contratarEnsambladores1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarEnsambladores1ActionPerformed
-        //TODO
+        if(Main.ensambladores1 < 15 && Main.ensambladores1 > 0 && (Main.botones1Contratados + Main.camaras1Contratados + Main.pantallas1Contratados + Main.pines1Contratados + Main.ensambladores1 < 15)){
+            Main.ensambladores1 ++;
+            Main.listaEnsambladores1[Main.ensambladores1-1] = new Ensambladores1(Main.listaEnsambladores1[0].pantallas1em, Main.listaEnsambladores1[0].botones1em, Main.listaEnsambladores1[0].pines1em, Main.listaEnsambladores1[0].camaras1em, Main.listaEnsambladores1[0].pantallas1mut, Main.listaEnsambladores1[0].botones1mut, Main.listaEnsambladores1[0].pines1mut, Main.listaEnsambladores1[0].camaras1mut, Main.listaEnsambladores1[0].pantallas1prod, Main.listaEnsambladores1[0].botones1prod, Main.listaEnsambladores1[0].pines1prod, Main.listaEnsambladores1[0].camaras1prod, Main.listaEnsambladores1[0].ensamblador1mut);
+            Main.listaEnsambladores1[Main.ensambladores1-1].start();
+            ensambladores1.setText(String.valueOf(Main.ensambladores1));
+            Planta1.ensambladores1.setText(String.valueOf(Main.ensambladores1));
+            
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
+        }
     }//GEN-LAST:event_contratarEnsambladores1ActionPerformed
 
     private void despedirEnsambladores1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirEnsambladores1ActionPerformed
-        //TODO
+        if(Main.ensambladores1 <= 15 && Main.ensambladores1 > 1){
+            Main.ensambladores1 --;
+            Main.listaEnsambladores1[Main.ensambladores1-1].setContratado(false);
+            ensambladores1.setText(String.valueOf(Main.ensambladores1));
+            Planta1.ensambladores1.setText(String.valueOf(Main.ensambladores1));
+            
+            CSVEL csvEscritor = new CSVEL();
+            csvEscritor.EscribirCsv(); 
+        }else{
+            JOptionPane.showMessageDialog(null, "No puedes despedir a todos los ensambladores ya que despedirán al Gerente.");
+        }
     }//GEN-LAST:event_despedirEnsambladores1ActionPerformed
 
     /**

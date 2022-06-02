@@ -6,6 +6,8 @@ import Clases.Planta1.Camaras1;
 import Clases.Planta1.Ensambladores1;
 import Clases.Planta1.Pantallas1;
 import Clases.Planta1.Pines1;
+import Clases.Planta1.Gerente1;
+import Clases.Planta1.Jefe1;
 import Clases.Planta2.Botones2;
 import Clases.Planta2.Camaras2;
 import Clases.Planta2.Ensambladores2;
@@ -18,6 +20,7 @@ import java.util.concurrent.Semaphore;
 public class Inicio extends javax.swing.JFrame {
     public static Planta2 planta2 = new Planta2();
     public static Planta1 planta1 = new Planta1();
+    
     public Inicio() {
         initComponents();
         
@@ -102,20 +105,20 @@ public class Inicio extends javax.swing.JFrame {
         
 
         //Creación de Semáforos de Productores.
-        Semaphore pantallas1Productor = new Semaphore(Main.pantallas1Almacen);
-        Semaphore botones1Productor = new Semaphore(Main.botones1Almacen);
-        Semaphore pines1Productor = new Semaphore(Main.pines1Almacen);
-        Semaphore camaras1Productor = new Semaphore(Main.camaras1Almacen);
+        Semaphore pantallas1prod = new Semaphore(Main.pantallas1Almacen);
+        Semaphore botones1prod = new Semaphore(Main.botones1Almacen);
+        Semaphore pines1prod = new Semaphore(Main.pines1Almacen);
+        Semaphore camaras1prod = new Semaphore(Main.camaras1Almacen);
         
         Semaphore pantallas2Productor = new Semaphore(Main.pantallas2Almacen);
         Semaphore botones2Productor = new Semaphore(Main.botones2Almacen);
         Semaphore pines2Productor = new Semaphore(Main.pines2Almacen);
         Semaphore camaras2Productor = new Semaphore(Main.camaras2Almacen);
         
-        Semaphore pantallas1Mutex = new Semaphore(1);
-        Semaphore botones1Mutex = new Semaphore(1);
-        Semaphore pines1Mutex = new Semaphore(1);
-        Semaphore camaras1Mutex = new Semaphore(1);
+        Semaphore pantallas1mut = new Semaphore(1);
+        Semaphore botones1mut = new Semaphore(1);
+        Semaphore pines1mut = new Semaphore(1);
+        Semaphore camaras1mut = new Semaphore(1);
         
         Semaphore pantallas2Mutex = new Semaphore(1);
         Semaphore botones2Mutex = new Semaphore(1);
@@ -123,11 +126,11 @@ public class Inicio extends javax.swing.JFrame {
         Semaphore camaras2Mutex = new Semaphore(1);
         
         //Creación de Semáforoes de Ensambladores
-        Semaphore pantallas1Ensamblador = new Semaphore(0);
-        Semaphore botones1Ensamblador = new Semaphore(0);
-        Semaphore pines1Ensamblador = new Semaphore(0);
-        Semaphore camaras1Ensamblador = new Semaphore(0);
-        Semaphore ensamblador1Mutex = new Semaphore(1);
+        Semaphore pantallas1em = new Semaphore(0);
+        Semaphore botones1em = new Semaphore(0);
+        Semaphore pines1em = new Semaphore(0);
+        Semaphore camaras1em = new Semaphore(0);
+        Semaphore ensamblador1mut = new Semaphore(1);
         
         Semaphore pantallas2Ensamblador = new Semaphore(0);
         Semaphore botones2Ensamblador = new Semaphore(0);
@@ -140,22 +143,42 @@ public class Inicio extends javax.swing.JFrame {
             Main.listaBotones2[i] = new Botones2(botones2Productor, botones2Mutex, botones2Ensamblador);
             Main.listaBotones2[i].start();
         }
+        for (int i = 0; i < Main.botones1Contratados; i++) {
+            Main.listaBotones1[i] = new Botones1(botones1prod, botones1mut, botones1em);
+            Main.listaBotones1[i].start();
+        }        
         for (int i = 0; i < Main.pantallas2Contratados; i++) {
             Main.listaPantallas2[i] = new Pantallas2(pantallas2Productor, pantallas2Mutex, pantallas2Ensamblador);
             Main.listaPantallas2[i].start();
         }
+        for (int i = 0; i < Main.pantallas1Contratados; i++) {
+            Main.listaPantallas1[i] = new Pantallas1(pantallas1prod, pantallas1mut, pantallas1em);
+            Main.listaPantallas1[i].start();
+        }        
         for (int i = 0; i < Main.pines2Contratados; i++) {
             Main.listaPines2[i] = new Pines2(pines2Productor, pines2Mutex, pines2Ensamblador);
             Main.listaPines2[i].start();
         }
+        for (int i = 0; i < Main.pines1Contratados; i++) {
+            Main.listaPines1[i] = new Pines1(pines1prod, pines1mut, pines1em);
+            Main.listaPines1[i].start();
+        }        
         for (int i = 0; i < Main.camaras2Contratados; i++) {
             Main.listaCamaras2[i] = new Camaras2(camaras2Productor, camaras2Mutex, camaras2Ensamblador);
             Main.listaCamaras2[i].start();
         }
+        for (int i = 0; i < Main.camaras1Contratados; i++) {
+            Main.listaCamaras1[i] = new Camaras1(camaras1prod, camaras1mut, camaras1em);
+            Main.listaCamaras1[i].start();
+        }        
         for (int i = 0; i < Main.ensambladores2; i++) {
             Main.listaEnsambladores2[i] = new Ensambladores2(pantallas2Ensamblador, botones2Ensamblador, pines2Ensamblador, camaras2Ensamblador, pantallas2Mutex, botones2Mutex, pines2Mutex, camaras2Mutex, pantallas2Productor, botones2Productor, pines2Productor, camaras2Productor, ensamblador2Mutex);
             Main.listaEnsambladores2[i].start();
         }
+//        for (int i = 0; i < Main.ensambladores1; i++) {
+//            Main.listaEnsambladores1[i] = new Ensambladores1(pantallas1em, botones1em, pines1em, camaras1em, pantallas1em, botones1mut, pines1mut, camaras1mut, pantallas1mut, botones1mut, pines1mut, camaras1mut, ensamblador1mut);
+//            Main.listaEnsambladores1[i].start();
+//        }        
         
         //Creación de Semáforo del paso de dias.
         Semaphore diasMutex = new Semaphore(1);
@@ -163,9 +186,14 @@ public class Inicio extends javax.swing.JFrame {
         //Inicialización del Gerente y del Jefe.
         Jefe2 jefe2 = new Jefe2(diasMutex);
         jefe2.start();
+//        Jefe1 jefe1 = new Jefe1(diasMutex);
+//        jefe1.start();     
         
         Gerente2 gerente2 = new Gerente2(diasMutex);
         gerente2.start();
+//        Gerente1 gerente1 = new Gerente1(diasMutex);
+//        gerente1.start();        
+       
         
         //Cierre de la ventana.
         this.dispose();

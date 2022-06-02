@@ -6,18 +6,18 @@ import Interfaces.Planta1;
 import java.util.concurrent.Semaphore;
 
 public class Botones1 extends Thread{
-    Semaphore botones1;
-    Semaphore botones1mut;
-    Semaphore botones1em;
+    public Semaphore botones1;
+    public Semaphore botones1mut;
+    public Semaphore botones1em;
     
     int pordia;
-    int salary;
+    static int salary;
     int tiempoE;
     
     boolean contratadoB;
     
     
-    public Botones1(Semaphore botones1, Semaphore botones1mut, Semaphore botones1em, int pordia, int salary, boolean contratadoB) {
+    public Botones1(Semaphore botones1, Semaphore botones1mut, Semaphore botones1em) {
         this.botones1 = botones1;
         this.botones1mut = botones1mut;
         this.botones1em = botones1em;

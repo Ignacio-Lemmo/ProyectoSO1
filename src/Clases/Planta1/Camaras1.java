@@ -6,18 +6,18 @@ import Interfaces.Planta1;
 import java.util.concurrent.Semaphore;
 
 public class Camaras1 extends Thread{
-    Semaphore camaras1;
-    Semaphore camaras1mut;
-    Semaphore camaras1em;
+    public Semaphore camaras1;
+    public Semaphore camaras1mut;
+    public Semaphore camaras1em;
     
     int pordia;
-    int salary;
+    static int salary;
     int tiempoE;
     
     boolean contratadoB;
     
     
-    public Camaras1(Semaphore camaras1, Semaphore camaras1mut, Semaphore camaras1em, int pordia, int salary, boolean contratadoB) {
+    public Camaras1(Semaphore camaras1, Semaphore camaras1mut, Semaphore camaras1em) {
         this.camaras1 = camaras1;
         this.camaras1mut = camaras1mut;
         this.camaras1em = camaras1em;

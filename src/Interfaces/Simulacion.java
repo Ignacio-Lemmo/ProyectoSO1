@@ -9,6 +9,7 @@ import static Interfaces.Inicio.planta2;
 import static Interfaces.Inicio.planta1;
 
 
+
 /**
  *
  * @author ijlem
@@ -136,7 +137,9 @@ public class Simulacion extends javax.swing.JFrame {
     }//GEN-LAST:event_ambasActionPerformed
 
     private void dashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardActionPerformed
-        // TODO add your handling code here:
+        Graficos graficos = new Graficos();
+        graficos.setLocationRelativeTo(null);
+        graficos.setVisible(true);
     }//GEN-LAST:event_dashboardActionPerformed
 
     /**

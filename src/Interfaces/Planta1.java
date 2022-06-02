@@ -8,20 +8,20 @@ import Clases.Main;
 
 /**
  *
- * @author mvlop
+ * @author ijlem
  */
 public class Planta1 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Planta1
+     * Creates new form Planta2
      */
     public Planta1() {
         initComponents();
-        botones1.setText(String.valueOf(Main.botones1Contratados));
-        pantallas1.setText(String.valueOf(Main.pantallas1Contratados));
-        pines2.setText(String.valueOf(Main.pines1Contratados));
-        camaras1.setText(String.valueOf(Main.camaras1Contratados));
-        ensambladores1.setText(String.valueOf(Main.ensambladores1));
+        botones1.setText(String.valueOf(Main.botones2Contratados));
+        pantallas1.setText(String.valueOf(Main.pantallas2Contratados));
+        pines1.setText(String.valueOf(Main.pines2Contratados));
+        camaras1.setText(String.valueOf(Main.camaras2Contratados));
+        ensambladores1.setText(String.valueOf(Main.ensambladores2));
         diasRestantes1.setText(String.valueOf(Main.diasRestantes));
         
     }
@@ -53,7 +53,7 @@ public class Planta1 extends javax.swing.JFrame {
         botones1 = new javax.swing.JLabel();
         pantallas1 = new javax.swing.JLabel();
         camaras1 = new javax.swing.JLabel();
-        pines2 = new javax.swing.JLabel();
+        pines1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         ensambladores1 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -72,7 +72,7 @@ public class Planta1 extends javax.swing.JFrame {
         gerente1 = new javax.swing.JLabel();
         botones1Gastos = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        pines2Gastos = new javax.swing.JLabel();
+        pines1Gastos = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         pantallas1Gastos = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -82,7 +82,7 @@ public class Planta1 extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         ganancia1 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        ganancia1Total = new javax.swing.JLabel();
+        gananciaTotal1 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jefe1Gastos = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
@@ -91,7 +91,7 @@ public class Planta1 extends javax.swing.JFrame {
         gananciasNetas1 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        pilladas1 = new javax.swing.JLabel();
+        pilladas2 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
 
         jLabel11.setText("jLabel11");
@@ -181,9 +181,9 @@ public class Planta1 extends javax.swing.JFrame {
         camaras1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         camaras1.setText("0");
 
-        pines2.setBackground(new java.awt.Color(255, 255, 255));
-        pines2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        pines2.setText("0");
+        pines1.setBackground(new java.awt.Color(255, 255, 255));
+        pines1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        pines1.setText("0");
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -257,9 +257,9 @@ public class Planta1 extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel21.setText("Gastos:");
 
-        pines2Gastos.setBackground(new java.awt.Color(255, 255, 255));
-        pines2Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        pines2Gastos.setText("0");
+        pines1Gastos.setBackground(new java.awt.Color(255, 255, 255));
+        pines1Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        pines1Gastos.setText("0");
 
         jLabel22.setBackground(new java.awt.Color(255, 255, 255));
         jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -297,9 +297,9 @@ public class Planta1 extends javax.swing.JFrame {
         jLabel26.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel26.setText("Ganancia:");
 
-        ganancia1Total.setBackground(new java.awt.Color(255, 255, 255));
-        ganancia1Total.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        ganancia1Total.setText("0");
+        gananciaTotal1.setBackground(new java.awt.Color(255, 255, 255));
+        gananciaTotal1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        gananciaTotal1.setText("0");
 
         jLabel27.setBackground(new java.awt.Color(255, 255, 255));
         jLabel27.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -339,9 +339,9 @@ public class Planta1 extends javax.swing.JFrame {
             }
         });
 
-        pilladas1.setBackground(new java.awt.Color(255, 255, 255));
-        pilladas1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        pilladas1.setText("0");
+        pilladas2.setBackground(new java.awt.Color(255, 255, 255));
+        pilladas2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        pilladas2.setText("0");
 
         jLabel31.setBackground(new java.awt.Color(255, 255, 255));
         jLabel31.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -369,7 +369,7 @@ public class Planta1 extends javax.swing.JFrame {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(jefe1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jefe1Gastos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(pilladas1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(pilladas2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -404,7 +404,7 @@ public class Planta1 extends javax.swing.JFrame {
                                         .addGap(51, 51, 51)
                                         .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(ganancia1Total, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(gananciaTotal1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jLabel13)
@@ -468,8 +468,8 @@ public class Planta1 extends javax.swing.JFrame {
                             .addComponent(jLabel22))
                         .addGap(10, 10, 10)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(pines2Gastos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pines2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(pines1Gastos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pines1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10)
@@ -548,10 +548,10 @@ public class Planta1 extends javax.swing.JFrame {
                                         .addGap(6, 6, 6)
                                         .addComponent(jLabel22))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(pines2)
+                                        .addComponent(pines1)
                                         .addGap(6, 6, 6)
-                                        .addComponent(pines2Gastos)))))))
-                .addGap(32, 32, 32)
+                                        .addComponent(pines1Gastos)))))))
+                .addGap(38, 38, 38)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -570,7 +570,7 @@ public class Planta1 extends javax.swing.JFrame {
                     .addComponent(ganancia1)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel27)
-                        .addComponent(ganancia1Total)))
+                        .addComponent(gananciaTotal1)))
                 .addGap(39, 39, 39)
                 .addComponent(jLabel16)
                 .addGap(18, 18, 18)
@@ -604,8 +604,8 @@ public class Planta1 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel31)
-                    .addComponent(pilladas1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                    .addComponent(pilladas2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel30)
                     .addComponent(gananciasNetas1))
@@ -618,9 +618,9 @@ public class Planta1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Planta1Personal1 personal1 = new Planta1Personal1();
-        personal1.setLocationRelativeTo(null);
-        personal1.setVisible(true);
+        Planta2Personal personal = new Planta2Personal();
+        personal.setLocationRelativeTo(null);
+        personal.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -671,7 +671,7 @@ public class Planta1 extends javax.swing.JFrame {
     public static volatile javax.swing.JLabel ensambladores1;
     public static volatile javax.swing.JLabel ensambladores1Gastos;
     public static volatile javax.swing.JLabel ganancia1;
-    public static volatile javax.swing.JLabel ganancia1Total;
+    public static volatile javax.swing.JLabel gananciaTotal1;
     public static volatile javax.swing.JLabel gananciasNetas1;
     public static volatile javax.swing.JLabel gerente1;
     public static volatile javax.swing.JLabel gerente1Gastos;
@@ -712,10 +712,10 @@ public class Planta1 extends javax.swing.JFrame {
     public static volatile javax.swing.JLabel pantallas1;
     public static volatile javax.swing.JLabel pantallas1Gastos;
     public static volatile javax.swing.JProgressBar pantallas1Progreso;
-    public static volatile javax.swing.JLabel pilladas1;
+    public static volatile javax.swing.JLabel pilladas2;
+    public static volatile javax.swing.JLabel pines1;
+    public static volatile javax.swing.JLabel pines1Gastos;
     public static volatile javax.swing.JProgressBar pines1Progreso;
-    public static volatile javax.swing.JLabel pines2;
-    public static volatile javax.swing.JLabel pines2Gastos;
     public static volatile javax.swing.JLabel producidos1;
     public static volatile javax.swing.JLabel producidos1Total;
     // End of variables declaration//GEN-END:variables

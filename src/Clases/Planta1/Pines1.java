@@ -7,18 +7,18 @@ import java.util.concurrent.Semaphore;
 
 public class Pines1 extends Thread{
     
-    Semaphore pines1;
-    Semaphore pines1mut;
-    Semaphore pines1em;
+    public Semaphore pines1;
+    public Semaphore pines1mut;
+    public Semaphore pines1em;
     
     int pordia;
-    int salary;
+    static int salary;
     int tiempoE;
     
     boolean contratadoB;
     
     
-    public Pines1(Semaphore pines1, Semaphore pines1mut, Semaphore pines1em, int pordia, int salary, boolean contratadoB) {
+    public Pines1(Semaphore pines1, Semaphore pines1mut, Semaphore pines1em) {
         this.pines1 = pines1;
         this.pines1mut = pines1mut;
         this.pines1em = pines1em;

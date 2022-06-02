@@ -9,18 +9,18 @@ import java.util.concurrent.Semaphore;
 
 public class Pantallas1 extends Thread{
     
-    Semaphore pantallas1;
-    Semaphore pantallas1mut;
-    Semaphore pantallas1em;
+    public Semaphore pantallas1;
+    public Semaphore pantallas1mut;
+    public Semaphore pantallas1em;
     
     int pordia;
-    int salary;
+    static int salary;
     int tiempoE;
     
     boolean contratadoB;
     
     
-    public Pantallas1(Semaphore pantallas1, Semaphore pantallas1mut, Semaphore pantallas1em, int pordia, int salary, boolean contratadoB) {
+    public Pantallas1(Semaphore pantallas1, Semaphore pantallas1mut, Semaphore pantallas1em) {
         this.pantallas1 = pantallas1;
         this.pantallas1mut = pantallas1mut;
         this.pantallas1em = pantallas1em;
