@@ -41,6 +41,7 @@ public class Main {
     public static volatile int ensambladores2;
     
     //Declaracion del Jefe y el Gerente.
+    public static volatile int jefe1Estado;
     public static volatile int jefe2Estado;
     
     //Declaracion de elementos.
@@ -75,6 +76,8 @@ public class Main {
     public static volatile int ensambladores1Gastos = 0;
     public static volatile int gerente1Gastos = 0;
     public static volatile int jefe1Gastos = 0;
+    public static volatile int jefe1Pilladas = 0;
+    
     
     public static volatile int pantallas2Gastos = 0;
     public static volatile int botones2Gastos = 0;

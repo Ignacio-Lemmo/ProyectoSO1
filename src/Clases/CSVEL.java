@@ -60,8 +60,8 @@ public class CSVEL {
         try{
            FileWriter csvGuardar = new FileWriter("./Histórico.csv"); 
            csvGuardar.write(Main.dias + "\n" + Main.botones1Contratados);
-           csvEscritor.flush();
-           csvEscritor.close();
+           csvGuardar.flush();
+           csvGuardar.close();
         }catch(Exception e){
             
         }

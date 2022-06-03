@@ -6,6 +6,9 @@ package Interfaces;
 
 import Clases.Main;
 import static Interfaces.Inicio.planta2;
+import static Interfaces.Inicio.planta1;
+
+
 
 /**
  *
@@ -121,16 +124,22 @@ public class Simulacion extends javax.swing.JFrame {
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
-        // TODO add your handling code here:
+        Inicio.planta1.setLocationRelativeTo(null);
+        Inicio.planta1.setVisible(true);
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void ambasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ambasActionPerformed
         Inicio.planta2.setLocationRelativeTo(null);
         Inicio.planta2.setVisible(true);
+        Inicio.planta1.setLocationRelativeTo(planta2);
+        Inicio.planta1.setVisible(true);
+        
     }//GEN-LAST:event_ambasActionPerformed
 
     private void dashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardActionPerformed
-        // TODO add your handling code here:
+        Graficos graficos = new Graficos();
+        graficos.setLocationRelativeTo(null);
+        graficos.setVisible(true);
     }//GEN-LAST:event_dashboardActionPerformed
 
     /**
