@@ -46,8 +46,7 @@ public class Jefe1 extends Thread{
     
     
     public void run() {
-        int tiempo = Main.tiempo;
-        int contador = 0;
+
         
         while (go) {
             try {
@@ -60,7 +59,7 @@ public class Jefe1 extends Thread{
                 
                 //// se descuenta el tiempo
                 
-                Thread.sleep((tiempo/horas)*cont);
+                Thread.sleep((Main.tiempo/horas)*cont);
                
                 //pasa un dia y se settea en interfaz el dia
                 
@@ -93,8 +92,7 @@ public class Jefe1 extends Thread{
                 Main.jefe1Gastos += 7;
                         
                 
-                
-                /////me falta gerente
+
                 
                 //se settean en la interfaz
                 
@@ -114,6 +112,9 @@ public class Jefe1 extends Thread{
                 // se hace release del sem
                 
                 semJefe.release();
+
+                int tiempo = Main.tiempo;
+                int contador = 0;                
                 double timing = 14 * (tiempo/1000);  
                 
                 //Cuando el jefe no esta trabajando
