@@ -131,7 +131,7 @@ public class Simulacion extends javax.swing.JFrame {
     private void ambasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ambasActionPerformed
         Inicio.planta2.setLocationRelativeTo(null);
         Inicio.planta2.setVisible(true);
-        Inicio.planta1.setLocationRelativeTo(null);
+        Inicio.planta1.setLocationRelativeTo(planta2);
         Inicio.planta1.setVisible(true);
         
     }//GEN-LAST:event_ambasActionPerformed
