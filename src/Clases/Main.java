@@ -11,7 +11,6 @@ import Clases.Planta2.Ensambladores2;
 import Clases.Planta2.Pantallas2;
 import Clases.Planta2.Pines2;
 import Interfaces.Inicio;
-import java.util.concurrent.Semaphore;
 
 /**
  *
