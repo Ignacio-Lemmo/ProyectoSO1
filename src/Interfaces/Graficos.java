@@ -6,6 +6,7 @@ package Interfaces;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import org.jfree.ui.RefineryUtilities;
 
 /**
  *
@@ -408,12 +409,8 @@ public class Graficos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void graphGastosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphGastosActionPerformed
-
         
-//        Clases.GraphicsChart graphG = new Clases.GraphicsChart("Pie Chart","Gastos", par1, par2);
-//        graphG.pack();;
-//        graphG.setVisible(true);
-//        graphG.setLocationRelativeTo(null);
+      
         
     }//GEN-LAST:event_graphGastosActionPerformed
 
@@ -461,10 +458,21 @@ public class Graficos extends javax.swing.JFrame {
     }//GEN-LAST:event_corridasItemStateChanged
 
     private void graphGNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphGNActionPerformed
-                Clases.GraphicsChart graphG = new Clases.GraphicsChart("Pie Chart","Teléfonos Ensamblados", Integer.parseInt(ensamblados1.getText()), Integer.parseInt(ensamblados2.getText()));
-                graphG.pack();;
-                graphG.setVisible(true);
-                graphG.setLocationRelativeTo(null);
+        int num1 = Integer.parseInt(ganancias1.getText());
+        int num2 = Integer.parseInt(ganancias2.getText());
+        int suma = num1 + num2;
+        
+        double num1T = (num1 * 100)/suma;
+        double num2T = (num2 * 100)/suma;
+        
+        System.out.println(num1T);
+        System.out.println(num2T);
+        
+        
+        Clases.GraphicsChart graphG = new Clases.GraphicsChart("Bar Chart","Gastos", num1T, num2T);
+        graphG.pack();
+        RefineryUtilities.centerFrameOnScreen(graphG);                
+        graphG.setVisible(true);    
     }//GEN-LAST:event_graphGNActionPerformed
 
     /**
