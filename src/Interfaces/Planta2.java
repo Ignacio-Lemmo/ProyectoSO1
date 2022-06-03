@@ -463,7 +463,7 @@ public class Planta2 extends javax.swing.JFrame {
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel12.setText("Xperia 10 IV");
+        jLabel12.setText("Xperia 10 III");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 100, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 710));

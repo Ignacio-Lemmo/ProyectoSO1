@@ -48,7 +48,6 @@ public class Planta1 extends javax.swing.JFrame {
         jefe1Gastos = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        gananciaTotal1 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         ganancia1 = new javax.swing.JLabel();
         ensambladores1Gastos = new javax.swing.JLabel();
@@ -96,6 +95,7 @@ public class Planta1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+        gananciaTotal1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
@@ -171,11 +171,6 @@ public class Planta1 extends javax.swing.JFrame {
         jLabel26.setText("Ganancia:");
         jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 388, 108, -1));
 
-        gananciaTotal1.setBackground(new java.awt.Color(255, 255, 255));
-        gananciaTotal1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        gananciaTotal1.setText("0");
-        jPanel1.add(gananciaTotal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(667, 388, 47, -1));
-
         jLabel25.setBackground(new java.awt.Color(255, 255, 255));
         jLabel25.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel25.setText("Gastos:");
@@ -184,12 +179,12 @@ public class Planta1 extends javax.swing.JFrame {
         ganancia1.setBackground(new java.awt.Color(255, 255, 255));
         ganancia1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ganancia1.setText("0");
-        jPanel1.add(ganancia1, new org.netbeans.lib.awtextra.AbsoluteConstraints(404, 388, 47, -1));
+        jPanel1.add(ganancia1, new org.netbeans.lib.awtextra.AbsoluteConstraints(404, 388, 70, -1));
 
         ensambladores1Gastos.setBackground(new java.awt.Color(255, 255, 255));
         ensambladores1Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ensambladores1Gastos.setText("0");
-        jPanel1.add(ensambladores1Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 388, 30, -1));
+        jPanel1.add(ensambladores1Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 388, 100, -1));
 
         jLabel24.setBackground(new java.awt.Color(255, 255, 255));
         jLabel24.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -433,15 +428,24 @@ public class Planta1 extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
+        gananciaTotal1.setBackground(new java.awt.Color(255, 255, 255));
+        gananciaTotal1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        gananciaTotal1.setText("0");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 640, Short.MAX_VALUE)
+                .addComponent(gananciaTotal1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 140, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(88, Short.MAX_VALUE)
+                .addComponent(gananciaTotal1)
+                .addGap(31, 31, 31))
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, 140));

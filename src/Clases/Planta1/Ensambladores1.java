@@ -105,6 +105,8 @@ public class Ensambladores1 extends Thread{
                    
                    Planta1.producidos1.setText(String.valueOf(Main.producidos1));
                    Planta1.producidos1Total.setText(String.valueOf(Main.producidos1Total));
+                   Planta1.ganancia1.setText(String.valueOf(Main.ganancias));
+                   Planta1.gananciaTotal1.setText(String.valueOf(Main.ganancias));
                    
                    //release del mut del ensamblador
                    
@@ -117,9 +119,7 @@ public class Ensambladores1 extends Thread{
         }
     }    
 
-    public void start() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+
     
     
 }
