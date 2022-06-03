@@ -14,7 +14,7 @@ import java.util.concurrent.Semaphore;
  *
  * @author mvlop
  */
-public class Jefe1 {    
+public class Jefe1 extends Thread{    
 
     int horas;
     int cont;

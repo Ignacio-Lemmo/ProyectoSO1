@@ -54,7 +54,6 @@ public class Planta2 extends javax.swing.JFrame {
         pantallas2 = new javax.swing.JLabel();
         camaras2 = new javax.swing.JLabel();
         pines2 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         ensambladores2 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         producidos2 = new javax.swing.JLabel();
@@ -93,526 +92,386 @@ public class Planta2 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         pilladas2 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
 
         jLabel11.setText("jLabel11");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setText("Ensambladores");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 353, -1, -1));
 
-        botones2Progreso.setBackground(new java.awt.Color(204, 204, 204));
+        botones2Progreso.setBackground(new java.awt.Color(255, 255, 255));
         botones2Progreso.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        botones2Progreso.setForeground(new java.awt.Color(0, 0, 0));
+        botones2Progreso.setForeground(new java.awt.Color(51, 102, 255));
         botones2Progreso.setMaximum(Main.botones2Almacen);
         botones2Progreso.setString(String.valueOf(Main.botones2Producidos));
         botones2Progreso.setStringPainted(true);
+        getContentPane().add(botones2Progreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 134, -1, 45));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel2.setText("Botones:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 107, -1, -1));
 
-        pantallas2Progreso.setBackground(new java.awt.Color(204, 204, 204));
+        pantallas2Progreso.setBackground(new java.awt.Color(255, 255, 255));
         pantallas2Progreso.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        pantallas2Progreso.setForeground(new java.awt.Color(0, 0, 0));
+        pantallas2Progreso.setForeground(new java.awt.Color(51, 102, 255));
         pantallas2Progreso.setMaximum(Main.pantallas2Almacen);
         pantallas2Progreso.setString(String.valueOf(Main.pantallas2Producidas));
         pantallas2Progreso.setStringPainted(true);
+        getContentPane().add(pantallas2Progreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 134, -1, 45));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel3.setText("Pantallas:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 107, -1, -1));
 
-        pines2Progreso.setBackground(new java.awt.Color(204, 204, 204));
+        pines2Progreso.setBackground(new java.awt.Color(255, 255, 255));
         pines2Progreso.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        pines2Progreso.setForeground(new java.awt.Color(0, 0, 0));
+        pines2Progreso.setForeground(new java.awt.Color(51, 102, 255));
         pines2Progreso.setMaximum(Main.pines2Almacen);
         pines2Progreso.setString(String.valueOf(Main.pines2Producidos)
         );
         pines2Progreso.setStringPainted(true);
+        getContentPane().add(pines2Progreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 134, -1, 45));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel4.setText("Pines:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 107, -1, -1));
 
-        camaras2Progreso.setBackground(new java.awt.Color(204, 204, 204));
+        camaras2Progreso.setBackground(new java.awt.Color(255, 255, 255));
         camaras2Progreso.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        camaras2Progreso.setForeground(new java.awt.Color(0, 0, 0));
+        camaras2Progreso.setForeground(new java.awt.Color(51, 102, 255));
         camaras2Progreso.setMaximum(Main.camaras2Almacen);
         camaras2Progreso.setString(String.valueOf(Main.camaras2Producidas)
         );
         camaras2Progreso.setStringPainted(true);
+        getContentPane().add(camaras2Progreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(515, 134, -1, 45));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel5.setText("Cámaras:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 107, -1, -1));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel6.setText("Almacenes");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 23, -1, -1));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel7.setText("Pantallas:");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 267, -1, -1));
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel8.setText("Botones:");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 264, -1, -1));
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel9.setText("Pines:");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(361, 267, 59, -1));
 
         jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel10.setText("Cámaras:");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 259, -1, -1));
 
         botones2.setBackground(new java.awt.Color(255, 255, 255));
         botones2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         botones2.setText("0");
+        getContentPane().add(botones2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 264, 47, -1));
 
         pantallas2.setBackground(new java.awt.Color(255, 255, 255));
         pantallas2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         pantallas2.setText("0");
+        getContentPane().add(pantallas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 267, 47, -1));
 
         camaras2.setBackground(new java.awt.Color(255, 255, 255));
         camaras2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         camaras2.setText("0");
+        getContentPane().add(camaras2, new org.netbeans.lib.awtextra.AbsoluteConstraints(599, 259, 47, -1));
 
         pines2.setBackground(new java.awt.Color(255, 255, 255));
         pines2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         pines2.setText("0");
-
-        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel12.setText("Productores");
+        getContentPane().add(pines2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 267, 47, -1));
 
         ensambladores2.setBackground(new java.awt.Color(255, 255, 255));
         ensambladores2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ensambladores2.setText("0");
+        getContentPane().add(ensambladores2, new org.netbeans.lib.awtextra.AbsoluteConstraints(158, 399, 30, -1));
 
         jLabel13.setBackground(new java.awt.Color(255, 255, 255));
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel13.setText("Ensambladores:");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 399, -1, -1));
 
         producidos2.setBackground(new java.awt.Color(255, 255, 255));
         producidos2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         producidos2.setText("0");
+        getContentPane().add(producidos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 399, 47, -1));
 
         jLabel14.setBackground(new java.awt.Color(255, 255, 255));
         jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel14.setText("Ensamblados:");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 399, -1, -1));
 
         producidos2Total.setBackground(new java.awt.Color(255, 255, 255));
         producidos2Total.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         producidos2Total.setText("0");
+        getContentPane().add(producidos2Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 399, 43, -1));
 
         jLabel15.setBackground(new java.awt.Color(255, 255, 255));
         jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel15.setText("Ensamblados Total:");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(505, 399, -1, -1));
 
         jLabel16.setBackground(new java.awt.Color(255, 255, 255));
         jLabel16.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel16.setText("Jefe/Gerente");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 486, -1, -1));
 
         jLabel17.setBackground(new java.awt.Color(255, 255, 255));
         jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel17.setText("Jefe:");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 532, 84, -1));
 
         jLabel18.setBackground(new java.awt.Color(255, 255, 255));
         jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel18.setText("Gerente:");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 532, -1, -1));
 
         dias.setBackground(new java.awt.Color(255, 255, 255));
         dias.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         dias.setText("0");
+        getContentPane().add(dias, new org.netbeans.lib.awtextra.AbsoluteConstraints(641, 561, 30, -1));
 
         jLabel19.setBackground(new java.awt.Color(255, 255, 255));
         jLabel19.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel19.setText("Días Total:");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 561, 106, -1));
 
         diasRestantes.setBackground(new java.awt.Color(255, 255, 255));
         diasRestantes.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         diasRestantes.setText("0");
+        getContentPane().add(diasRestantes, new org.netbeans.lib.awtextra.AbsoluteConstraints(641, 534, 30, -1));
 
         jLabel20.setBackground(new java.awt.Color(255, 255, 255));
         jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel20.setText("Días Entrega:");
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 534, -1, -1));
 
         jefe2.setBackground(new java.awt.Color(255, 255, 255));
         jefe2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jefe2.setText("Estado");
+        getContentPane().add(jefe2, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 532, 110, -1));
 
         gerente2.setBackground(new java.awt.Color(255, 255, 255));
         gerente2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         gerente2.setText("Estado");
+        getContentPane().add(gerente2, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 532, 90, -1));
 
         botones2Gastos.setBackground(new java.awt.Color(255, 255, 255));
         botones2Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         botones2Gastos.setText("0");
+        getContentPane().add(botones2Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 291, 47, -1));
 
         jLabel21.setBackground(new java.awt.Color(255, 255, 255));
         jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel21.setText("Gastos:");
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 291, 67, -1));
 
         pines2Gastos.setBackground(new java.awt.Color(255, 255, 255));
         pines2Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         pines2Gastos.setText("0");
+        getContentPane().add(pines2Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 294, 47, -1));
 
         jLabel22.setBackground(new java.awt.Color(255, 255, 255));
         jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel22.setText("Gastos:");
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(361, 294, -1, -1));
 
         pantallas2Gastos.setBackground(new java.awt.Color(255, 255, 255));
         pantallas2Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         pantallas2Gastos.setText("0");
+        getContentPane().add(pantallas2Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 294, 47, -1));
 
         jLabel23.setBackground(new java.awt.Color(255, 255, 255));
         jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel23.setText("Gastos:");
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 294, 76, -1));
 
         camaras2Gastos.setBackground(new java.awt.Color(255, 255, 255));
         camaras2Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         camaras2Gastos.setText("0");
+        getContentPane().add(camaras2Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(599, 286, 47, -1));
 
         jLabel24.setBackground(new java.awt.Color(255, 255, 255));
         jLabel24.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel24.setText("Gastos:");
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 286, 76, -1));
 
         ensambladores2Gastos.setBackground(new java.awt.Color(255, 255, 255));
         ensambladores2Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ensambladores2Gastos.setText("0");
+        getContentPane().add(ensambladores2Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 426, 30, -1));
 
         jLabel25.setBackground(new java.awt.Color(255, 255, 255));
         jLabel25.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel25.setText("Gastos:");
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 426, 124, -1));
 
         ganancia.setBackground(new java.awt.Color(255, 255, 255));
         ganancia.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ganancia.setText("0");
+        getContentPane().add(ganancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(404, 426, 47, -1));
 
         jLabel26.setBackground(new java.awt.Color(255, 255, 255));
         jLabel26.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel26.setText("Ganancia:");
+        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 426, 108, -1));
 
         gananciaTotal.setBackground(new java.awt.Color(255, 255, 255));
         gananciaTotal.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         gananciaTotal.setText("0");
+        getContentPane().add(gananciaTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(667, 426, 47, -1));
 
         jLabel27.setBackground(new java.awt.Color(255, 255, 255));
         jLabel27.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel27.setText("Ganancia Total:");
+        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(502, 426, 153, -1));
 
         jefe2Gastos.setBackground(new java.awt.Color(255, 255, 255));
         jefe2Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jefe2Gastos.setText("0");
+        getContentPane().add(jefe2Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 559, 110, -1));
 
         jLabel28.setBackground(new java.awt.Color(255, 255, 255));
         jLabel28.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel28.setText("Gastos:");
+        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 559, 78, -1));
 
         gerente2Gastos.setBackground(new java.awt.Color(255, 255, 255));
         gerente2Gastos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         gerente2Gastos.setText("0");
+        getContentPane().add(gerente2Gastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 562, 90, -1));
 
         jLabel29.setBackground(new java.awt.Color(255, 255, 255));
         jLabel29.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel29.setText("Gastos:");
+        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 562, 68, -1));
 
         gananciasNetas.setBackground(new java.awt.Color(255, 255, 255));
         gananciasNetas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         gananciasNetas.setText("0");
+        getContentPane().add(gananciasNetas, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 630, 47, -1));
 
         jLabel30.setBackground(new java.awt.Color(255, 255, 255));
         jLabel30.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel30.setText("Ganancias Netas:");
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 630, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setBackground(new java.awt.Color(0, 102, 255));
         jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Administrar Personal");
+        jButton1.setBorder(null);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 669, 190, 30));
 
         pilladas2.setBackground(new java.awt.Color(255, 255, 255));
         pilladas2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         pilladas2.setText("0");
+        getContentPane().add(pilladas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 590, 110, -1));
 
         jLabel31.setBackground(new java.awt.Color(255, 255, 255));
         jLabel31.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel31.setText("Atrapado:");
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 590, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel6)
-                .addGap(302, 302, 302))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(10, 10, 10)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jefe2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jefe2Gastos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(pilladas2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(ensambladores2Gastos, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(99, 99, 99)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(jLabel18)
-                                                .addGap(12, 12, 12)
-                                                .addComponent(gerente2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(12, 12, 12)
-                                                .addComponent(gerente2Gastos, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(69, 69, 69)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel20)
-                                                .addGap(10, 10, 10)
-                                                .addComponent(diasRestantes, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(10, 10, 10)
-                                                .addComponent(dias, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(10, 10, 10)
-                                        .addComponent(ganancia, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(51, 51, 51)
-                                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(gananciaTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jLabel13)
-                        .addGap(10, 10, 10)
-                        .addComponent(ensambladores2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(99, 99, 99)
-                        .addComponent(jLabel14)
-                        .addGap(10, 10, 10)
-                        .addComponent(producidos2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(51, 51, 51)
-                        .addComponent(jLabel15)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(producidos2Total, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jLabel2)
-                        .addGap(97, 97, 97)
-                        .addComponent(jLabel3)
-                        .addGap(88, 88, 88)
-                        .addComponent(jLabel4)
-                        .addGap(117, 117, 117)
-                        .addComponent(jLabel5))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(botones2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(pantallas2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(pines2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(camaras2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(306, 306, 306)
-                        .addComponent(jLabel12))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(286, 286, 286)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(300, 300, 300)
-                        .addComponent(jLabel16))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(botones2Gastos, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
-                            .addComponent(botones2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(pantallas2Gastos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pantallas2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel22))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(pines2Gastos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pines2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(36, 36, 36)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(camaras2Gastos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(camaras2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(270, 270, 270)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(16, 16, 16)
-                                .addComponent(jLabel30)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(gananciasNetas, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        jPanel1.setBackground(new java.awt.Color(51, 102, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel6)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botones2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pantallas2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pines2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(camaras2Progreso, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39)
-                .addComponent(jLabel12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel21))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botones2)
-                                .addGap(6, 6, 6)
-                                .addComponent(botones2Gastos))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel24))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(camaras2)
-                                .addGap(6, 6, 6)
-                                .addComponent(camaras2Gastos))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel7)
-                                            .addComponent(pantallas2))
-                                        .addGap(6, 6, 6)
-                                        .addComponent(jLabel23))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(27, 27, 27)
-                                        .addComponent(pantallas2Gastos))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(jLabel22))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(pines2)
-                                        .addGap(6, 6, 6)
-                                        .addComponent(pines2Gastos)))))))
-                .addGap(38, 38, 38)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
-                    .addComponent(ensambladores2)
-                    .addComponent(jLabel14)
-                    .addComponent(producidos2)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel15)
-                        .addComponent(producidos2Total)))
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel25)
-                    .addComponent(ensambladores2Gastos)
-                    .addComponent(jLabel26)
-                    .addComponent(ganancia)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel27)
-                        .addComponent(gananciaTotal)))
-                .addGap(39, 39, 39)
-                .addComponent(jLabel16)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel17)
-                        .addGap(6, 6, 6)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel28)
-                            .addComponent(jefe2Gastos)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel18)
-                                .addComponent(jefe2))
-                            .addComponent(gerente2)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(2, 2, 2)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel20)
-                                    .addComponent(diasRestantes))))
-                        .addGap(6, 6, 6)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19)
-                            .addComponent(dias)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(1, 1, 1)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel29)
-                                    .addComponent(gerente2Gastos))))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel31)
-                    .addComponent(pilladas2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel30)
-                    .addComponent(gananciasNetas))
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addContainerGap())
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 200, Short.MAX_VALUE)
         );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 200));
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 130, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 710, 130));
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 90, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 620, -1, 90));
+
+        jLabel32.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel32.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/f67251b9dce2ac0485caa29d17c833bd.png"))); // NOI18N
+        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 140, -1, -1));
+
+        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel12.setText("Xperia 10 IV");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 100, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 710));
+
+        jLabel33.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel33.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel33.setText("Productores");
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 218, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -700,12 +559,18 @@ public class Planta2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     public static volatile javax.swing.JLabel jefe2;
     public static volatile javax.swing.JLabel jefe2Gastos;
     public static volatile javax.swing.JLabel pantallas2;

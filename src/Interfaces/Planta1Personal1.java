@@ -44,27 +44,29 @@ public class Planta1Personal1 extends javax.swing.JFrame {
     private void initComponents() {
 
         botones6 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        contratarBotones1 = new javax.swing.JButton();
-        despedirBotones1 = new javax.swing.JButton();
-        contratarPantallas1 = new javax.swing.JButton();
-        despedirPantallas1 = new javax.swing.JButton();
-        contratarPines1 = new javax.swing.JButton();
-        despedirPines1 = new javax.swing.JButton();
-        contratarCamaras1 = new javax.swing.JButton();
-        despedirCamaras1 = new javax.swing.JButton();
-        contratarEnsambladores1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         despedirEnsambladores1 = new javax.swing.JButton();
         pines1 = new javax.swing.JLabel();
-        botones1 = new javax.swing.JLabel();
-        pantallas1 = new javax.swing.JLabel();
+        despedirPines1 = new javax.swing.JButton();
+        contratarPines1 = new javax.swing.JButton();
+        despedirPantallas1 = new javax.swing.JButton();
+        contratarPantallas1 = new javax.swing.JButton();
+        despedirBotones1 = new javax.swing.JButton();
+        contratarBotones1 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        contratarEnsambladores1 = new javax.swing.JButton();
+        despedirCamaras1 = new javax.swing.JButton();
+        contratarCamaras1 = new javax.swing.JButton();
         camaras1 = new javax.swing.JLabel();
+        pantallas1 = new javax.swing.JLabel();
+        botones1 = new javax.swing.JLabel();
         ensambladores1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         botones6.setBackground(new java.awt.Color(255, 255, 255));
         botones6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -72,111 +74,10 @@ public class Planta1Personal1 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel1.setText("Personal");
-
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel2.setText("Botones:");
-
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel3.setText("Pantallas:");
-
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel4.setText("Pines:");
-
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel5.setText("Cámaras:");
-
-        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel6.setText("Ensambladores:");
-
-        contratarBotones1.setBackground(new java.awt.Color(153, 255, 153));
-        contratarBotones1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        contratarBotones1.setText("Contratar");
-        contratarBotones1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contratarBotones1ActionPerformed(evt);
-            }
-        });
-
-        despedirBotones1.setBackground(new java.awt.Color(255, 153, 153));
-        despedirBotones1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        despedirBotones1.setText("Despedir");
-        despedirBotones1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                despedirBotones1ActionPerformed(evt);
-            }
-        });
-
-        contratarPantallas1.setBackground(new java.awt.Color(153, 255, 153));
-        contratarPantallas1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        contratarPantallas1.setText("Contratar");
-        contratarPantallas1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contratarPantallas1ActionPerformed(evt);
-            }
-        });
-
-        despedirPantallas1.setBackground(new java.awt.Color(255, 153, 153));
-        despedirPantallas1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        despedirPantallas1.setText("Despedir");
-        despedirPantallas1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                despedirPantallas1ActionPerformed(evt);
-            }
-        });
-
-        contratarPines1.setBackground(new java.awt.Color(153, 255, 153));
-        contratarPines1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        contratarPines1.setText("Contratar");
-        contratarPines1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contratarPines1ActionPerformed(evt);
-            }
-        });
-
-        despedirPines1.setBackground(new java.awt.Color(255, 153, 153));
-        despedirPines1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        despedirPines1.setText("Despedir");
-        despedirPines1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                despedirPines1ActionPerformed(evt);
-            }
-        });
-
-        contratarCamaras1.setBackground(new java.awt.Color(153, 255, 153));
-        contratarCamaras1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        contratarCamaras1.setText("Contratar");
-        contratarCamaras1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contratarCamaras1ActionPerformed(evt);
-            }
-        });
-
-        despedirCamaras1.setBackground(new java.awt.Color(255, 153, 153));
-        despedirCamaras1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        despedirCamaras1.setText("Despedir");
-        despedirCamaras1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                despedirCamaras1ActionPerformed(evt);
-            }
-        });
-
-        contratarEnsambladores1.setBackground(new java.awt.Color(153, 255, 153));
-        contratarEnsambladores1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        contratarEnsambladores1.setText("Contratar");
-        contratarEnsambladores1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contratarEnsambladores1ActionPerformed(evt);
-            }
-        });
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         despedirEnsambladores1.setBackground(new java.awt.Color(255, 153, 153));
         despedirEnsambladores1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -186,124 +87,157 @@ public class Planta1Personal1 extends javax.swing.JFrame {
                 despedirEnsambladores1ActionPerformed(evt);
             }
         });
+        jPanel1.add(despedirEnsambladores1, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 279, -1, -1));
 
         pines1.setBackground(new java.awt.Color(255, 255, 255));
         pines1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         pines1.setText("0");
+        jPanel1.add(pines1, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 193, 34, -1));
 
-        botones1.setBackground(new java.awt.Color(255, 255, 255));
-        botones1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        botones1.setText("0");
+        despedirPines1.setBackground(new java.awt.Color(255, 153, 153));
+        despedirPines1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        despedirPines1.setText("Despedir");
+        despedirPines1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                despedirPines1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(despedirPines1, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 193, -1, -1));
 
-        pantallas1.setBackground(new java.awt.Color(255, 255, 255));
-        pantallas1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        pantallas1.setText("0");
+        contratarPines1.setBackground(new java.awt.Color(153, 255, 153));
+        contratarPines1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        contratarPines1.setText("Contratar");
+        contratarPines1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarPines1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(contratarPines1, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 193, -1, -1));
+
+        despedirPantallas1.setBackground(new java.awt.Color(255, 153, 153));
+        despedirPantallas1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        despedirPantallas1.setText("Despedir");
+        despedirPantallas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                despedirPantallas1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(despedirPantallas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 150, -1, -1));
+
+        contratarPantallas1.setBackground(new java.awt.Color(153, 255, 153));
+        contratarPantallas1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        contratarPantallas1.setText("Contratar");
+        contratarPantallas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarPantallas1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(contratarPantallas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 150, -1, -1));
+
+        despedirBotones1.setBackground(new java.awt.Color(255, 153, 153));
+        despedirBotones1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        despedirBotones1.setText("Despedir");
+        despedirBotones1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                despedirBotones1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(despedirBotones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 107, -1, -1));
+
+        contratarBotones1.setBackground(new java.awt.Color(153, 255, 153));
+        contratarBotones1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        contratarBotones1.setText("Contratar");
+        contratarBotones1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarBotones1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(contratarBotones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 107, -1, -1));
+
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel5.setText("Cámaras:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 236, 150, -1));
+
+        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel6.setText("Ensambladores:");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 279, 150, -1));
+
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel4.setText("Pines:");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 193, 150, -1));
+
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setText("Pantallas:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 150, 150, -1));
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel2.setText("Botones:");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 107, 150, -1));
+
+        contratarEnsambladores1.setBackground(new java.awt.Color(153, 255, 153));
+        contratarEnsambladores1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        contratarEnsambladores1.setText("Contratar");
+        contratarEnsambladores1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarEnsambladores1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(contratarEnsambladores1, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 279, -1, -1));
+
+        despedirCamaras1.setBackground(new java.awt.Color(255, 153, 153));
+        despedirCamaras1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        despedirCamaras1.setText("Despedir");
+        despedirCamaras1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                despedirCamaras1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(despedirCamaras1, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 236, -1, -1));
+
+        contratarCamaras1.setBackground(new java.awt.Color(153, 255, 153));
+        contratarCamaras1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        contratarCamaras1.setText("Contratar");
+        contratarCamaras1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarCamaras1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(contratarCamaras1, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 236, -1, -1));
 
         camaras1.setBackground(new java.awt.Color(255, 255, 255));
         camaras1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         camaras1.setText("0");
+        jPanel1.add(camaras1, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 236, 34, -1));
+
+        pantallas1.setBackground(new java.awt.Color(255, 255, 255));
+        pantallas1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        pantallas1.setText("0");
+        jPanel1.add(pantallas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 150, 34, -1));
+
+        botones1.setBackground(new java.awt.Color(255, 255, 255));
+        botones1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botones1.setText("0");
+        jPanel1.add(botones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 107, 34, -1));
 
         ensambladores1.setBackground(new java.awt.Color(255, 255, 255));
         ensambladores1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         ensambladores1.setText("0");
+        jPanel1.add(ensambladores1, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 279, 34, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(camaras1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19)
-                        .addComponent(contratarCamaras1)
-                        .addGap(18, 18, 18)
-                        .addComponent(despedirCamaras1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ensambladores1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(19, 19, 19)
-                                .addComponent(contratarEnsambladores1)
-                                .addGap(18, 18, 18)
-                                .addComponent(despedirEnsambladores1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(pines1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(pantallas1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(19, 19, 19)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(contratarPines1)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(despedirPines1))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(contratarPantallas1)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(despedirPantallas1))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(botones1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(19, 19, 19)
-                                .addComponent(contratarBotones1)
-                                .addGap(18, 18, 18)
-                                .addComponent(despedirBotones1)))
-                        .addGap(0, 38, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(180, 180, 180)
-                .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(contratarBotones1)
-                    .addComponent(despedirBotones1)
-                    .addComponent(botones1))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(contratarPantallas1)
-                    .addComponent(despedirPantallas1)
-                    .addComponent(pantallas1))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(contratarPines1)
-                    .addComponent(despedirPines1)
-                    .addComponent(pines1))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(contratarCamaras1)
-                    .addComponent(despedirCamaras1)
-                    .addComponent(camaras1))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(contratarEnsambladores1)
-                        .addComponent(despedirEnsambladores1))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel6)
-                        .addComponent(ensambladores1)))
-                .addContainerGap(31, Short.MAX_VALUE))
-        );
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setText("Personal");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/154-1548140_blue-brush-stroke-png-transparent-png.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, 0, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 340));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -326,7 +260,7 @@ public class Planta1Personal1 extends javax.swing.JFrame {
     private void despedirBotones1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirBotones1ActionPerformed
         if(Main.botones1Contratados <= 15 && Main.botones1Contratados > 1){
             Main.botones1Contratados --;
-            Main.listaBotones2[Main.botones1Contratados-1].setContratado(false);
+            Main.listaBotones1[Main.botones1Contratados-1].setContratado(false);
             botones1.setText(String.valueOf(Main.botones1Contratados));
             Planta1.botones1.setText(String.valueOf(Main.botones1Contratados));
             
@@ -510,6 +444,8 @@ public class Planta1Personal1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     public static volatile javax.swing.JLabel pantallas1;
     public static volatile javax.swing.JLabel pines1;
     // End of variables declaration//GEN-END:variables

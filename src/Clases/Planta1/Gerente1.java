@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @author mvlop
  */
-public class Gerente1 {
+public class Gerente1 extends Thread{
     Semaphore mutex;
     public static int salary = 180;
     String work = "Trabajando";

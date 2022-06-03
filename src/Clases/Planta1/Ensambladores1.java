@@ -4,7 +4,7 @@ import Clases.Main;
 import Interfaces.Planta1;
 import java.util.concurrent.Semaphore;
 
-public class Ensambladores1 {
+public class Ensambladores1 extends Thread{
   
     public static volatile Semaphore pantallas1em;
     public static volatile Semaphore botones1em;

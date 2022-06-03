@@ -43,7 +43,6 @@ public class Planta2Personal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        botones6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -65,37 +64,41 @@ public class Planta2Personal extends javax.swing.JFrame {
         pantallas2 = new javax.swing.JLabel();
         camaras2 = new javax.swing.JLabel();
         ensambladores2 = new javax.swing.JLabel();
-
-        botones6.setBackground(new java.awt.Color(255, 255, 255));
-        botones6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        botones6.setText("0");
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setText("Personal");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 13, -1, -1));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel2.setText("Botones:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 62, 150, -1));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel3.setText("Pantallas:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 105, 150, -1));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel4.setText("Pines:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 148, 150, -1));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel5.setText("Cámaras:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 191, 150, -1));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel6.setText("Ensambladores:");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 234, 150, -1));
 
         contratarBotones2.setBackground(new java.awt.Color(153, 255, 153));
         contratarBotones2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -105,6 +108,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 contratarBotones2ActionPerformed(evt);
             }
         });
+        getContentPane().add(contratarBotones2, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 62, -1, -1));
 
         despedirBotones2.setBackground(new java.awt.Color(255, 153, 153));
         despedirBotones2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -114,6 +118,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 despedirBotones2ActionPerformed(evt);
             }
         });
+        getContentPane().add(despedirBotones2, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 62, -1, -1));
 
         contratarPantallas2.setBackground(new java.awt.Color(153, 255, 153));
         contratarPantallas2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -123,6 +128,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 contratarPantallas2ActionPerformed(evt);
             }
         });
+        getContentPane().add(contratarPantallas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 105, -1, -1));
 
         despedirPantallas2.setBackground(new java.awt.Color(255, 153, 153));
         despedirPantallas2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -132,6 +138,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 despedirPantallas2ActionPerformed(evt);
             }
         });
+        getContentPane().add(despedirPantallas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 105, -1, -1));
 
         contratarPines2.setBackground(new java.awt.Color(153, 255, 153));
         contratarPines2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -141,6 +148,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 contratarPines2ActionPerformed(evt);
             }
         });
+        getContentPane().add(contratarPines2, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 148, -1, -1));
 
         despedirPines2.setBackground(new java.awt.Color(255, 153, 153));
         despedirPines2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -150,6 +158,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 despedirPines2ActionPerformed(evt);
             }
         });
+        getContentPane().add(despedirPines2, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 148, -1, -1));
 
         contratarCamaras2.setBackground(new java.awt.Color(153, 255, 153));
         contratarCamaras2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -159,6 +168,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 contratarCamaras2ActionPerformed(evt);
             }
         });
+        getContentPane().add(contratarCamaras2, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 191, -1, -1));
 
         despedirCamaras2.setBackground(new java.awt.Color(255, 153, 153));
         despedirCamaras2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -168,6 +178,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 despedirCamaras2ActionPerformed(evt);
             }
         });
+        getContentPane().add(despedirCamaras2, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 191, -1, -1));
 
         contratarEnsambladores2.setBackground(new java.awt.Color(153, 255, 153));
         contratarEnsambladores2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -177,6 +188,7 @@ public class Planta2Personal extends javax.swing.JFrame {
                 contratarEnsambladores2ActionPerformed(evt);
             }
         });
+        getContentPane().add(contratarEnsambladores2, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 234, -1, -1));
 
         despedirEnsambladores2.setBackground(new java.awt.Color(255, 153, 153));
         despedirEnsambladores2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -186,124 +198,35 @@ public class Planta2Personal extends javax.swing.JFrame {
                 despedirEnsambladores2ActionPerformed(evt);
             }
         });
+        getContentPane().add(despedirEnsambladores2, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 234, -1, -1));
 
         pines2.setBackground(new java.awt.Color(255, 255, 255));
         pines2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         pines2.setText("0");
+        getContentPane().add(pines2, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 148, 34, -1));
 
         botones2.setBackground(new java.awt.Color(255, 255, 255));
         botones2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         botones2.setText("0");
+        getContentPane().add(botones2, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 62, 34, -1));
 
         pantallas2.setBackground(new java.awt.Color(255, 255, 255));
         pantallas2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         pantallas2.setText("0");
+        getContentPane().add(pantallas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 105, 34, -1));
 
         camaras2.setBackground(new java.awt.Color(255, 255, 255));
         camaras2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         camaras2.setText("0");
+        getContentPane().add(camaras2, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 191, 34, -1));
 
         ensambladores2.setBackground(new java.awt.Color(255, 255, 255));
         ensambladores2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         ensambladores2.setText("0");
+        getContentPane().add(ensambladores2, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 234, 34, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(camaras2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19)
-                        .addComponent(contratarCamaras2)
-                        .addGap(18, 18, 18)
-                        .addComponent(despedirCamaras2)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ensambladores2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(19, 19, 19)
-                                .addComponent(contratarEnsambladores2)
-                                .addGap(18, 18, 18)
-                                .addComponent(despedirEnsambladores2))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(pines2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(pantallas2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(19, 19, 19)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(contratarPines2)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(despedirPines2))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(contratarPantallas2)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(despedirPantallas2))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(botones2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(19, 19, 19)
-                                .addComponent(contratarBotones2)
-                                .addGap(18, 18, 18)
-                                .addComponent(despedirBotones2)))
-                        .addGap(0, 38, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(180, 180, 180)
-                .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(contratarBotones2)
-                    .addComponent(despedirBotones2)
-                    .addComponent(botones2))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(contratarPantallas2)
-                    .addComponent(despedirPantallas2)
-                    .addComponent(pantallas2))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(contratarPines2)
-                    .addComponent(despedirPines2)
-                    .addComponent(pines2))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(contratarCamaras2)
-                    .addComponent(despedirCamaras2)
-                    .addComponent(camaras2))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(contratarEnsambladores2)
-                        .addComponent(despedirEnsambladores2))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel6)
-                        .addComponent(ensambladores2)))
-                .addContainerGap(31, Short.MAX_VALUE))
-        );
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/154-1548140_blue-brush-stroke-png-transparent-png.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, 0, -1, 370));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -490,7 +413,6 @@ public class Planta2Personal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static volatile javax.swing.JLabel botones2;
-    public static volatile javax.swing.JLabel botones6;
     public static volatile javax.swing.JLabel camaras2;
     private javax.swing.JButton contratarBotones2;
     private javax.swing.JButton contratarCamaras2;
@@ -509,6 +431,7 @@ public class Planta2Personal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     public static volatile javax.swing.JLabel pantallas2;
     public static volatile javax.swing.JLabel pines2;
     // End of variables declaration//GEN-END:variables

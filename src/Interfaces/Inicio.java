@@ -35,62 +35,52 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         parametros = new javax.swing.JButton();
         iniciar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         parametros.setBackground(new java.awt.Color(255, 255, 255));
         parametros.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         parametros.setText("Modificar Parámetros");
+        parametros.setBorder(null);
+        parametros.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         parametros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 parametrosActionPerformed(evt);
             }
         });
+        jPanel1.add(parametros, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 200, 40));
 
         iniciar.setBackground(new java.awt.Color(255, 255, 255));
         iniciar.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         iniciar.setText("Iniciar Simulación");
+        iniciar.setBorder(null);
+        iniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         iniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 iniciarActionPerformed(evt);
             }
         });
+        jPanel1.add(iniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 170, 30));
 
         jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 48)); // NOI18N
         jLabel1.setText("Sony");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(iniciar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(parametros)))
-                .addContainerGap(47, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
-                .addComponent(iniciar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(parametros)
-                .addGap(20, 20, 20))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/10-dark-blue-watercolor-brush-stroke-9.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-440, 30, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 290));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -175,10 +165,10 @@ public class Inicio extends javax.swing.JFrame {
             Main.listaEnsambladores2[i] = new Ensambladores2(pantallas2Ensamblador, botones2Ensamblador, pines2Ensamblador, camaras2Ensamblador, pantallas2Mutex, botones2Mutex, pines2Mutex, camaras2Mutex, pantallas2Productor, botones2Productor, pines2Productor, camaras2Productor, ensamblador2Mutex);
             Main.listaEnsambladores2[i].start();
         }
-//        for (int i = 0; i < Main.ensambladores1; i++) {
-//            Main.listaEnsambladores1[i] = new Ensambladores1(pantallas1em, botones1em, pines1em, camaras1em, pantallas1em, botones1mut, pines1mut, camaras1mut, pantallas1mut, botones1mut, pines1mut, camaras1mut, ensamblador1mut);
-//            Main.listaEnsambladores1[i].start();
-//        }        
+        for (int i = 0; i < Main.ensambladores1; i++) {
+            Main.listaEnsambladores1[i] = new Ensambladores1(pantallas1em, botones1em, pines1em, camaras1em, pantallas1mut, botones1mut, pines1mut, camaras1mut, pantallas1prod, botones1prod, pines1prod, camaras1prod, ensamblador1mut);
+            Main.listaEnsambladores1[i].start();
+        }        
         
         //Creación de Semáforo del paso de dias.
         Semaphore diasMutex = new Semaphore(1);
@@ -186,13 +176,13 @@ public class Inicio extends javax.swing.JFrame {
         //Inicialización del Gerente y del Jefe.
         Jefe2 jefe2 = new Jefe2(diasMutex);
         jefe2.start();
-//        Jefe1 jefe1 = new Jefe1(diasMutex);
-//        jefe1.start();     
+        Jefe1 jefe1 = new Jefe1(diasMutex);
+        jefe1.start();     
         
         Gerente2 gerente2 = new Gerente2(diasMutex);
         gerente2.start();
-//        Gerente1 gerente1 = new Gerente1(diasMutex);
-//        gerente1.start();        
+        Gerente1 gerente1 = new Gerente1(diasMutex);
+        gerente1.start();        
        
         
         //Cierre de la ventana.
@@ -243,6 +233,8 @@ public class Inicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton iniciar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton parametros;
     // End of variables declaration//GEN-END:variables
 }

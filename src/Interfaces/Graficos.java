@@ -100,19 +100,25 @@ public class Graficos extends javax.swing.JFrame {
     private void graphGastosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphGastosActionPerformed
 
         
-        Clases.GraphicsChart graphG = new Clases.GraphicsChart("Pie Chart","Gastos", 80, 20);
-        graphG.pack();;
-        graphG.setVisible(true);
-        graphG.setLocationRelativeTo(null);
+//        Clases.GraphicsChart graphG = new Clases.GraphicsChart("Pie Chart","Gastos", par1, par2);
+//        graphG.pack();;
+//        graphG.setVisible(true);
+//        graphG.setLocationRelativeTo(null);
         
     }//GEN-LAST:event_graphGastosActionPerformed
 
     private void graphGNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphGNActionPerformed
-        // TODO add your handling code here:
+//        Clases.GraphicsChart graphG = new Clases.GraphicsChart("Pie Chart","Gastos", par1, par2);
+//        graphG.pack();;
+//        graphG.setVisible(true);
+//        graphG.setLocationRelativeTo(null);
     }//GEN-LAST:event_graphGNActionPerformed
 
     private void graphPerdayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphPerdayActionPerformed
-        // TODO add your handling code here:
+//        Clases.GraphicsChart graphG = new Clases.GraphicsChart("Pie Chart","Gastos", par1, par2);
+//        graphG.pack();;
+//        graphG.setVisible(true);
+//        graphG.setLocationRelativeTo(null);
     }//GEN-LAST:event_graphPerdayActionPerformed
 
     /**
