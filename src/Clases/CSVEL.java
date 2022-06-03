@@ -80,9 +80,6 @@ public class CSVEL {
             }
             csvLeer.close();
             dataHistorica = historicaUnida.split("break");
-            System.out.println(dataHistorica[0]);
-            System.out.println(dataHistorica[1]);
-            System.out.println(dataHistorica[2]);
             String [] x = dataHistorica[dataHistorica.length - 2 ].split(" ");
             indice = x[1].split(",");
             Main.totalCorridas = Integer.parseInt(indice[0]); 

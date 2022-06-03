@@ -34,7 +34,7 @@ public class Gerente2 extends Thread {
                 }else{
                     dias.release();
                     int counter = 0;
-                    while(counter < durmiendo){
+                    while(counter < (durmiendo * (Main.tiempo/24))){
                        double vigilando = (Math.random() * (90 - 30)) +  30;
                        double vigilandu = (Main.tiempo/24) * (vigilando/60);
                        Planta2.gerente2.setText("Vigilando");

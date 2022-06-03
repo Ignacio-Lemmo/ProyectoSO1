@@ -92,7 +92,7 @@ public class Parametros extends javax.swing.JFrame {
         ensambladores1 = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 153));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -444,53 +444,86 @@ public class Parametros extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try{
+            
             //Establecer nuevo tiempo.
-            Main.tiempo = Integer.parseInt(tiempo.getText());
-            Main.diasRestantes = Integer.parseInt(tiempoRestante.getText());
-            Main.entregas = Integer.parseInt(tiempoRestante.getText());
+            int tiempo2 = Integer.parseInt(tiempo.getText());
+            int diasRestantes2 = Integer.parseInt(tiempoRestante.getText());
+            int entregas2 = Integer.parseInt(tiempoRestante.getText());
 
             //Establecer nuevos parametros de la planta 1.
-            Main.pantallas1Contratados = Integer.parseInt(pantallas1.getText());
-            Main.botones1Contratados = Integer.parseInt(botones1.getText());
-            Main.pines1Contratados = Integer.parseInt(pines1.getText());
-            Main.camaras1Contratados = Integer.parseInt(camaras1.getText());
-            Main.ensambladores1 = Integer.parseInt(ensambladores1.getText());
+            int pantallas1Contratados2 = Integer.parseInt(pantallas1.getText());
+            int botones1Contratados2 = Integer.parseInt(botones1.getText());
+            int pines1Contratados2 = Integer.parseInt(pines1.getText());
+            int camaras1Contratados2 = Integer.parseInt(camaras1.getText());
+            int ensambladores12 = Integer.parseInt(ensambladores1.getText());
 
-            Main.pantallas1Almacen = Integer.parseInt(pantallas1Almacen.getText());
-            Main.botones1Almacen = Integer.parseInt(botones1Almacen.getText());
-            Main.pines1Almacen = Integer.parseInt(pines1Almacen.getText());
-            Main.camaras1Almacen = Integer.parseInt(camaras1Almacen.getText());
+            int pantallas1Almacen2 = Integer.parseInt(pantallas1Almacen.getText());
+            int botones1Almacen2 = Integer.parseInt(botones1Almacen.getText());
+            int pines1Almacen2 = Integer.parseInt(pines1Almacen.getText());
+            int camaras1Almacen2 = Integer.parseInt(camaras1Almacen.getText());
 
             //Establecer nuevos parametros de la planta 2.
-            Main.pantallas2Contratados = Integer.parseInt(pantallas2.getText());
-            Main.botones2Contratados = Integer.parseInt(botones2.getText());
-            Main.pines2Contratados = Integer.parseInt(pines2.getText());
-            Main.camaras2Contratados = Integer.parseInt(camaras2.getText());
-            Main.ensambladores2 = Integer.parseInt(ensambladores2.getText());
+            int pantallas2Contratados2 = Integer.parseInt(pantallas2.getText());
+            int botones2Contratados2 = Integer.parseInt(botones2.getText());
+            int pines2Contratados2 = Integer.parseInt(pines2.getText());
+            int camaras2Contratados2 = Integer.parseInt(camaras2.getText());
+            int ensambladores22 = Integer.parseInt(ensambladores2.getText());
 
-            Main.pantallas2Almacen = Integer.parseInt(pantallas2Almacen.getText());
-            Main.botones2Almacen = Integer.parseInt(botones2Almacen.getText());
-            Main.pines2Almacen = Integer.parseInt(pines2Almacen.getText());
-            Main.camaras2Almacen = Integer.parseInt(camaras2Almacen.getText());
+            int pantallas2Almacen2 = Integer.parseInt(pantallas2Almacen.getText());
+            int botones2Almacen2 = Integer.parseInt(botones2Almacen.getText());
+            int pines2Almacen2 = Integer.parseInt(pines2Almacen.getText());
+            int camaras2Almacen2 = Integer.parseInt(camaras2Almacen.getText());
             
-            //Establecer parámetros del histórico.
-            Main.botones1Establecidos = Main.botones1Contratados;
-            Main.pantallas1Establecidos = Main.pantallas1Contratados;
-            Main.camaras1Establecidos = Main.camaras1Contratados;
-            Main.pines1Establecidos = Main.pines1Contratados;
-            Main.ensambladores1Establecidos = Main.ensambladores1;
             
-            Main.botones2Establecidos = Main.botones2Contratados;
-            Main.pantallas2Establecidos = Main.pantallas2Contratados;
-            Main.camaras2Establecidos = Main.camaras2Contratados;
-            Main.pines2Establecidos = Main.pines2Contratados;
-            Main.ensambladores2Establecidos = Main.ensambladores2;
-            
-            if(Main.tiempo>0 && Main.entregas>0 && Main.pantallas1Contratados>0 && Main.botones1Contratados>0 && Main.pines1Contratados>0 && Main.camaras1Contratados>0 && Main.ensambladores1>0 && Main.pantallas1Almacen>0 && Main.botones1Almacen>0 && Main.pines1Almacen>0 && Main.camaras1Almacen>0 && Main.pantallas2Contratados>0 && Main.botones2Contratados>0 && Main.pines2Contratados>0 && Main.camaras2Contratados>0 && Main.ensambladores2>0 && Main.pantallas2Almacen>0 && Main.botones2Almacen>0 && Main.pines2Almacen>0 && Main.camaras2Almacen>0 && (Main.botones2Contratados+Main.camaras2Contratados+Main.pines2Contratados+Main.pantallas2Contratados <= 15) && (Main.botones1Contratados+Main.camaras1Contratados+Main.pines1Contratados+Main.pantallas1Contratados <= 15) ){
-               //Guardar cambios en el CSV.
-                CSVEL csvEscritor = new CSVEL();
-                csvEscritor.EscribirCsv(); 
-                this.dispose();
+            if(tiempo2>0 && entregas2>0 && pantallas1Contratados2>0 && botones1Contratados2>0 && pines1Contratados2>0 && camaras1Contratados2>0 && ensambladores12>0 && pantallas1Almacen2>0 && botones1Almacen2>0 && pines1Almacen2>0 && camaras1Almacen2>0 && pantallas2Contratados2>0 && botones2Contratados2>0 && pines2Contratados2>0 && camaras2Contratados2>0 && ensambladores22>0 && pantallas2Almacen2>0 && botones2Almacen2>0 && pines2Almacen2>0 && camaras2Almacen2>0 && (botones2Contratados2+camaras2Contratados2+pines2Contratados2+pantallas2Contratados2 <= 15) && (botones1Contratados2+camaras1Contratados2+pines1Contratados2+pantallas1Contratados2 <= 15) ){
+                //Establecer nuevo tiempo.
+                Main.tiempo = Integer.parseInt(tiempo.getText());
+                Main.diasRestantes = Integer.parseInt(tiempoRestante.getText());
+                Main.entregas = Integer.parseInt(tiempoRestante.getText());
+
+                //Establecer nuevos parametros de la planta 1.
+                Main.pantallas1Contratados = Integer.parseInt(pantallas1.getText());
+                Main.botones1Contratados = Integer.parseInt(botones1.getText());
+                Main.pines1Contratados = Integer.parseInt(pines1.getText());
+                Main.camaras1Contratados = Integer.parseInt(camaras1.getText());
+                Main.ensambladores1 = Integer.parseInt(ensambladores1.getText());
+
+                Main.pantallas1Almacen = Integer.parseInt(pantallas1Almacen.getText());
+                Main.botones1Almacen = Integer.parseInt(botones1Almacen.getText());
+                Main.pines1Almacen = Integer.parseInt(pines1Almacen.getText());
+                Main.camaras1Almacen = Integer.parseInt(camaras1Almacen.getText());
+
+                //Establecer nuevos parametros de la planta 2.
+                Main.pantallas2Contratados = Integer.parseInt(pantallas2.getText());
+                Main.botones2Contratados = Integer.parseInt(botones2.getText());
+                Main.pines2Contratados = Integer.parseInt(pines2.getText());
+                Main.camaras2Contratados = Integer.parseInt(camaras2.getText());
+                Main.ensambladores2 = Integer.parseInt(ensambladores2.getText());
+
+                Main.pantallas2Almacen = Integer.parseInt(pantallas2Almacen.getText());
+                Main.botones2Almacen = Integer.parseInt(botones2Almacen.getText());
+                Main.pines2Almacen = Integer.parseInt(pines2Almacen.getText());
+                Main.camaras2Almacen = Integer.parseInt(camaras2Almacen.getText());
+
+                //Establecer parámetros del histórico.
+                Main.botones1Establecidos = Main.botones1Contratados;
+                Main.pantallas1Establecidos = Main.pantallas1Contratados;
+                Main.camaras1Establecidos = Main.camaras1Contratados;
+                Main.pines1Establecidos = Main.pines1Contratados;
+                Main.ensambladores1Establecidos = Main.ensambladores1;
+
+                Main.botones2Establecidos = Main.botones2Contratados;
+                Main.pantallas2Establecidos = Main.pantallas2Contratados;
+                Main.camaras2Establecidos = Main.camaras2Contratados;
+                Main.pines2Establecidos = Main.pines2Contratados;
+                Main.ensambladores2Establecidos = Main.ensambladores2;
+
+                if(Main.tiempo>0 && Main.entregas>0 && Main.pantallas1Contratados>0 && Main.botones1Contratados>0 && Main.pines1Contratados>0 && Main.camaras1Contratados>0 && Main.ensambladores1>0 && Main.pantallas1Almacen>0 && Main.botones1Almacen>0 && Main.pines1Almacen>0 && Main.camaras1Almacen>0 && Main.pantallas2Contratados>0 && Main.botones2Contratados>0 && Main.pines2Contratados>0 && Main.camaras2Contratados>0 && Main.ensambladores2>0 && Main.pantallas2Almacen>0 && Main.botones2Almacen>0 && Main.pines2Almacen>0 && Main.camaras2Almacen>0 && (Main.botones2Contratados+Main.camaras2Contratados+Main.pines2Contratados+Main.pantallas2Contratados <= 15) && (Main.botones1Contratados+Main.camaras1Contratados+Main.pines1Contratados+Main.pantallas1Contratados <= 15) ){
+                   //Guardar cambios en el CSV.
+                    CSVEL csvEscritor = new CSVEL();
+                    csvEscritor.EscribirCsv(); 
+                    this.dispose();
+                }
             }else{
                 JOptionPane.showMessageDialog(null, "Asegurate de ingresas valores mayores a 0 en los parámetros.");
             }  
