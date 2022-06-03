@@ -36,8 +36,7 @@ public class Main {
     public static volatile int camaras2Contratados;
     
     //Declaracion de Ensambladores.
-    public static volatile int ensambladores1;
-    
+    public static volatile int ensambladores1; 
     public static volatile int ensambladores2;
     
     //Declaracion del Jefe y el Gerente.
@@ -49,13 +48,11 @@ public class Main {
     public static volatile int botones1Producidos = 0;
     public static volatile int pines1Producidos = 0;
     public static volatile int camaras1Producidas = 0;
-    public static volatile int telefonos1Producidos = 0;
     
     public static volatile int pantallas2Producidas = 0;
     public static volatile int botones2Producidos = 0;
     public static volatile int pines2Producidos = 0;
     public static volatile int camaras2Producidas = 0;
-    public static volatile int telefonos2Producidos = 0;
     
     //Declaración de la capacidad máxima de almacenes.
     public static volatile int pantallas1Almacen;
@@ -141,6 +138,7 @@ public class Main {
         //Lectura de los parámetros y asignación a las variables.
         CSVEL csvLector = new CSVEL();
         csvLector.LeerCsv();
+        csvLector.LeerHistorico();
         
         //Apertura de la interfaz inicial.
         Inicio inicio = new Inicio();

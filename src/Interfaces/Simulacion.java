@@ -8,6 +8,7 @@ import Clases.CSVEL;
 import Clases.Main;
 import static Interfaces.Inicio.planta2;
 import static Interfaces.Inicio.planta1;
+import javax.swing.JOptionPane;
 
 
 
@@ -166,7 +167,10 @@ public class Simulacion extends javax.swing.JFrame {
                 Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
                 CSVEL csvEscritor = new CSVEL();
                 csvEscritor.GuardarHistorico(); 
-            }
+                JOptionPane.showMessageDialog(null, "Data guardada exitósamente.");
+        }else{
+            JOptionPane.showMessageDialog(null, "Debes esperar a que transcurran 5 días antes de volver a guardar la data.");
+        }
     }//GEN-LAST:event_guardarHistoricoActionPerformed
 
     private void dashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardActionPerformed

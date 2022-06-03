@@ -7,8 +7,12 @@ import java.io.FileWriter;
 public class CSVEL {
     
     private static String linea;
+    private static String lineaHistorica;
     private static String dataUnida = "";
+    private static String historicaUnida = "";
     public static String[] data;
+    public static String[] dataHistorica;
+    public static String[] indice;
     
     public static void LeerCsv(){
         try{
@@ -59,11 +63,32 @@ public class CSVEL {
     public static void GuardarHistorico(){
         try{
            FileWriter csvGuardar = new FileWriter("./Histórico.csv", true); 
-           csvGuardar.append((Main.totalCorridas + 1) + "," + Main.diasTranscurridos + "," +Main.cambio + "\n" + Main.botones1Establecidos +  "," + Main.pantallas1Establecidos +  "," + Main.camaras1Establecidos +  "," + Main.pines1Establecidos +  "," + Main.ensambladores1Establecidos +  "," + Main.telefonos1Ensamblados + "," + Main.gananciasNetas1 + "," + Main.botones2Establecidos +  "," + Main.pantallas2Establecidos +  "," + Main.camaras2Establecidos +  "," + Main.pines2Establecidos +  "," + Main.ensambladores2Establecidos +  "," + Main.telefonos2Ensamblados + "," + Main.gananciasNetas2 + "\n");
+           csvGuardar.append((Main.totalCorridas + 1) + "," + Main.diasTranscurridos + "," +Main.cambio + "\n" + Main.botones1Establecidos +  "," + Main.pantallas1Establecidos +  "," + Main.camaras1Establecidos +  "," + Main.pines1Establecidos +  "," + Main.ensambladores1Establecidos +  "," + Main.telefonos1Ensamblados + "," + Main.gananciasNetas1 + "," + Main.botones2Establecidos +  "," + Main.pantallas2Establecidos +  "," + Main.camaras2Establecidos +  "," + Main.pines2Establecidos +  "," + Main.ensambladores2Establecidos +  "," + Main.telefonos2Ensamblados + "," + Main.gananciasNetas2 + "," + "break");
            csvGuardar.flush();
            csvGuardar.close();
         }catch(Exception e){
             
+        }
+    }
+    
+    public static void LeerHistorico(){
+        try{
+            BufferedReader csvLeer = new BufferedReader(new FileReader("./Histórico.csv"));
+            csvLeer.readLine();
+            while ((lineaHistorica = csvLeer.readLine()) != null) {;
+                historicaUnida += lineaHistorica + " ";
+            }
+            csvLeer.close();
+            dataHistorica = historicaUnida.split("break");
+            System.out.println(dataHistorica[0]);
+            System.out.println(dataHistorica[1]);
+            System.out.println(dataHistorica[2]);
+            String [] x = dataHistorica[dataHistorica.length - 2 ].split(" ");
+            indice = x[1].split(",");
+            Main.totalCorridas = Integer.parseInt(indice[0]); 
+        }catch(Exception e){
+            System.out.println(e);
+            Main.totalCorridas = 0;
         }
     }
 }
