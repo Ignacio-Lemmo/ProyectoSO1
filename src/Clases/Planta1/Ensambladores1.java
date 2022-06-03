@@ -98,15 +98,15 @@ public class Ensambladores1 extends Thread{
                    
                    //ganancias 
                    
-                   Main.ganancias += 900;
-                   Main.gananciaTotal += 900;
+                   Main.ganancias1 += 900;
+                   Main.gananciaTotal1 += 900;
                    
                    //setters de texto
                    
                    Planta1.producidos1.setText(String.valueOf(Main.producidos1));
                    Planta1.producidos1Total.setText(String.valueOf(Main.producidos1Total));
-                   Planta1.ganancia1.setText(String.valueOf(Main.ganancias));
-                   Planta1.gananciaTotal1.setText(String.valueOf(Main.ganancias));
+                   Planta1.ganancia1.setText(String.valueOf(Main.ganancias1));
+                   Planta1.gananciaTotal1.setText(String.valueOf(Main.ganancias1));
                    
                    //release del mut del ensamblador
                    

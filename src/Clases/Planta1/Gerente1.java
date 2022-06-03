@@ -36,7 +36,7 @@ public class Gerente1 extends Thread{
                     //settea el texto
                     Planta1.gerente1.setText(work);
                     Main.producidos1 = 0;
-                    Main.ganancias = 0;
+                    Main.ganancias1 = 0;
                     Planta1.ganancia1.setText(String.valueOf(0));
                     Planta1.producidos1.setText(String.valueOf(0));
                     //release

@@ -4,6 +4,7 @@
  */
 package Interfaces;
 
+import Clases.CSVEL;
 import Clases.Main;
 import static Interfaces.Inicio.planta2;
 import static Interfaces.Inicio.planta1;
@@ -35,8 +36,9 @@ public class Simulacion extends javax.swing.JFrame {
         planta2 = new javax.swing.JButton();
         planta1 = new javax.swing.JButton();
         ambas = new javax.swing.JButton();
-        dashboard = new javax.swing.JButton();
+        guardarHistorico = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        dashboard = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,6 +69,18 @@ public class Simulacion extends javax.swing.JFrame {
             }
         });
 
+        guardarHistorico.setBackground(new java.awt.Color(255, 255, 255));
+        guardarHistorico.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        guardarHistorico.setText("Guardar Data Actual");
+        guardarHistorico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarHistoricoActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 48)); // NOI18N
+        jLabel1.setText("Sony");
+
         dashboard.setBackground(new java.awt.Color(255, 255, 255));
         dashboard.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         dashboard.setText("Acceder al Dashboard");
@@ -75,9 +89,6 @@ public class Simulacion extends javax.swing.JFrame {
                 dashboardActionPerformed(evt);
             }
         });
-
-        jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 48)); // NOI18N
-        jLabel1.setText("Sony");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -92,27 +103,37 @@ public class Simulacion extends javax.swing.JFrame {
                             .addComponent(ambas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(planta2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(dashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(guardarHistorico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(89, 89, 89)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(dashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addGap(53, 53, 53)
                 .addComponent(ambas)
                 .addGap(18, 18, 18)
                 .addComponent(planta1)
                 .addGap(18, 18, 18)
                 .addComponent(planta2)
-                .addGap(38, 38, 38)
-                .addComponent(dashboard)
-                .addGap(8, 8, 8))
+                .addGap(27, 27, 27)
+                .addComponent(guardarHistorico)
+                .addContainerGap(62, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(325, Short.MAX_VALUE)
+                    .addComponent(dashboard)
+                    .addContainerGap()))
         );
 
         pack();
@@ -135,6 +156,18 @@ public class Simulacion extends javax.swing.JFrame {
         Inicio.planta1.setVisible(true);
         
     }//GEN-LAST:event_ambasActionPerformed
+
+    private void guardarHistoricoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarHistoricoActionPerformed
+        if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                CSVEL csvEscritor = new CSVEL();
+                csvEscritor.GuardarHistorico(); 
+            }
+    }//GEN-LAST:event_guardarHistoricoActionPerformed
 
     private void dashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardActionPerformed
         Graficos graficos = new Graficos();
@@ -180,6 +213,7 @@ public class Simulacion extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ambas;
     private javax.swing.JButton dashboard;
+    private javax.swing.JButton guardarHistorico;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton planta1;
     private javax.swing.JButton planta2;

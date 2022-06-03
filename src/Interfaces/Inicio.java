@@ -182,8 +182,27 @@ public class Inicio extends javax.swing.JFrame {
         Gerente2 gerente2 = new Gerente2(diasMutex);
         gerente2.start();
         Gerente1 gerente1 = new Gerente1(diasMutex);
-        gerente1.start();        
-       
+        gerente1.start();   
+        
+        //Establecer parámetros del histórico.
+        Main.botones1Establecidos = Main.botones1Contratados;
+        Main.pantallas1Establecidos = Main.pantallas1Contratados;
+        Main.camaras1Establecidos = Main.camaras1Contratados;
+        Main.pines1Establecidos = Main.pines1Contratados;
+        Main.ensambladores1Establecidos = Main.ensambladores1;
+        Main.telefonos1Ensamblados = 0;
+        Main.gananciasNetas1 = 0;
+
+        Main.diasTranscurridos = 0;
+        Main.cambio = false;
+        
+        Main.botones2Establecidos = Main.botones2Contratados;
+        Main.pantallas2Establecidos = Main.pantallas2Contratados;
+        Main.camaras2Establecidos = Main.camaras2Contratados;
+        Main.pines2Establecidos = Main.pines2Contratados;
+        Main.ensambladores2Establecidos = Main.ensambladores2;
+        Main.telefonos2Ensamblados = 0;
+        Main.gananciasNetas2 = 0;
         
         //Cierre de la ventana.
         this.dispose();

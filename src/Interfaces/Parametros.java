@@ -473,6 +473,19 @@ public class Parametros extends javax.swing.JFrame {
             Main.pines2Almacen = Integer.parseInt(pines2Almacen.getText());
             Main.camaras2Almacen = Integer.parseInt(camaras2Almacen.getText());
             
+            //Establecer parámetros del histórico.
+            Main.botones1Establecidos = Main.botones1Contratados;
+            Main.pantallas1Establecidos = Main.pantallas1Contratados;
+            Main.camaras1Establecidos = Main.camaras1Contratados;
+            Main.pines1Establecidos = Main.pines1Contratados;
+            Main.ensambladores1Establecidos = Main.ensambladores1;
+            
+            Main.botones2Establecidos = Main.botones2Contratados;
+            Main.pantallas2Establecidos = Main.pantallas2Contratados;
+            Main.camaras2Establecidos = Main.camaras2Contratados;
+            Main.pines2Establecidos = Main.pines2Contratados;
+            Main.ensambladores2Establecidos = Main.ensambladores2;
+            
             if(Main.tiempo>0 && Main.entregas>0 && Main.pantallas1Contratados>0 && Main.botones1Contratados>0 && Main.pines1Contratados>0 && Main.camaras1Contratados>0 && Main.ensambladores1>0 && Main.pantallas1Almacen>0 && Main.botones1Almacen>0 && Main.pines1Almacen>0 && Main.camaras1Almacen>0 && Main.pantallas2Contratados>0 && Main.botones2Contratados>0 && Main.pines2Contratados>0 && Main.camaras2Contratados>0 && Main.ensambladores2>0 && Main.pantallas2Almacen>0 && Main.botones2Almacen>0 && Main.pines2Almacen>0 && Main.camaras2Almacen>0 && (Main.botones2Contratados+Main.camaras2Contratados+Main.pines2Contratados+Main.pantallas2Contratados <= 15) && (Main.botones1Contratados+Main.camaras1Contratados+Main.pines1Contratados+Main.pantallas1Contratados <= 15) ){
                //Guardar cambios en el CSV.
                 CSVEL csvEscritor = new CSVEL();

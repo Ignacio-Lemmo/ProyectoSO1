@@ -50,7 +50,7 @@ public class Jefe2 extends Thread{
                         Main.jefe2Gastos += sueldo;
                         Planta2.jefe2Gastos.setText(String.valueOf(Main.jefe2Gastos));
 
-                        Planta2.gananciasNetas.setText(String.valueOf(Main.gananciaTotal - (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos)));
+                        Planta2.gananciasNetas.setText(String.valueOf(Main.gananciaTotal2 - (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos)));
                 dias.release();
                 double timing = 14 * (Main.tiempo/1000);
                 int counter = 0;

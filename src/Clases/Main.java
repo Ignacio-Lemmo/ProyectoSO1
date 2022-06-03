@@ -102,14 +102,39 @@ public class Main {
     public static volatile Ensambladores2 listaEnsambladores2[] = new Ensambladores2[15];
     
     //Declaración de Ganancias.
-    public static volatile int ganancias = 0;
-    public static volatile int gananciaTotal = 0;
+    public static volatile int ganancias1 = 0;
+    public static volatile int gananciaTotal1 = 0;
+    public static volatile int ganancias2 = 0;
+    public static volatile int gananciaTotal2 = 0;
     
     //Declaracion de telefonos producidos.
     public static volatile int producidos1 = 0;
     public static volatile int producidos2 = 0;
     public static volatile int producidos1Total = 0;
     public static volatile int producidos2Total = 0;
+    
+    //Declaración de las variables del histórico.
+    public static int totalCorridas;
+    
+    public static int botones1Establecidos;
+    public static int pantallas1Establecidos;
+    public static int pines1Establecidos;
+    public static int camaras1Establecidos;
+    public static int ensambladores1Establecidos;
+    public static int telefonos1Ensamblados;
+    public static int gananciasNetas1;
+    
+    public static int diasTranscurridos;
+    public static boolean cambio;
+    
+    public static int botones2Establecidos;
+    public static int pantallas2Establecidos;
+    public static int pines2Establecidos;
+    public static int camaras2Establecidos;
+    public static int ensambladores2Establecidos;
+    public static int telefonos2Ensamblados;
+    public static int gananciasNetas2;
+    
     
     public static void main(String[] args) {
         

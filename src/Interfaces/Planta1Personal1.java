@@ -252,6 +252,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
 
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
          }else{
             JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
         }
@@ -266,6 +277,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
         }else{
             JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de botones ya que despedirán al Gerente.");
         }
@@ -281,6 +303,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
 
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
          }else{
             JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
         }
@@ -295,6 +328,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
         }else{
             JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productoes de pantallas ya que despedirán al Gerente.");
         }
@@ -310,6 +354,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
 
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
          }else{
             JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
         }
@@ -324,6 +379,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
         }else{
             JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de pines ya que despedirán al Gerente.");
         }
@@ -339,6 +405,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
 
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
          }else{
             JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
         }
@@ -353,6 +430,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
         }else{
             JOptionPane.showMessageDialog(null, "No puedes despedir a todos los productores de cámaras ya que despedirán al Gerente.");
         }
@@ -368,6 +456,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
         }else{
             JOptionPane.showMessageDialog(null, "La planta ha llegado al número máximo de empleados.");
         }
@@ -382,6 +481,17 @@ public class Planta1Personal1 extends javax.swing.JFrame {
             
             CSVEL csvEscritor = new CSVEL();
             csvEscritor.EscribirCsv(); 
+            
+            if((Main.dias - Main.diasTranscurridos) > 5){
+                Main.diasTranscurridos = Main.dias;
+                Main.telefonos1Ensamblados = Main.producidos1Total;
+                Main.gananciasNetas1 = Main.gananciaTotal1 - (Main.botones1Gastos+Main.camaras1Gastos+Main.pantallas1Gastos+Main.pines1Gastos+Main.gerente1Gastos+Main.jefe1Gastos);
+                Main.telefonos2Ensamblados = Main.producidos2Total;
+                Main.gananciasNetas2 = Main.gananciaTotal2- (Main.botones2Gastos+Main.camaras2Gastos+Main.pantallas2Gastos+Main.pines2Gastos+Main.gerente2Gastos+Main.jefe2Gastos);
+                csvEscritor.GuardarHistorico(); 
+                Main.cambio = true;
+            }
+            
         }else{
             JOptionPane.showMessageDialog(null, "No puedes despedir a todos los ensambladores ya que despedirán al Gerente.");
         }

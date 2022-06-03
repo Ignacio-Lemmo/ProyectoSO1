@@ -87,10 +87,10 @@ public class Ensambladores2 extends Thread{
                 Main.producidos2Total ++;
                 Planta2.producidos2.setText(String.valueOf(Main.producidos2));
                 Planta2.producidos2Total.setText(String.valueOf(Main.producidos2Total));
-                Main.ganancias += 600;
-                Main.gananciaTotal += 600;
-                Planta2.ganancia.setText(String.valueOf(Main.ganancias));
-                Planta2.gananciaTotal.setText(String.valueOf(Main.gananciaTotal));
+                Main.ganancias2 += 600;
+                Main.gananciaTotal2 += 600;
+                Planta2.ganancia.setText(String.valueOf(Main.ganancias2));
+                Planta2.gananciaTotal.setText(String.valueOf(Main.gananciaTotal2));
                 ensamblador2Mutex.release();
                }
             }catch(Exception e){

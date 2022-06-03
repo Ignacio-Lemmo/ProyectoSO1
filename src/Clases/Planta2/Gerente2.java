@@ -27,7 +27,7 @@ public class Gerente2 extends Thread {
                     Planta2.gerente2.setText("Trabajando");
                     Main.diasRestantes = Integer.parseInt(CSVEL.data[19]);;
                     Main.producidos2 = 0;
-                    Main.ganancias = 0;
+                    Main.ganancias2 = 0;
                     Planta2.ganancia.setText("0");
                     Planta2.producidos2.setText("0");
                     dias.release();

@@ -107,7 +107,7 @@ public class Jefe1 extends Thread{
                 
                 
                 
-                Planta1.gananciasNetas1.setText(String.valueOf(Main.gananciaTotal - getGananciasNetas(Main.botones1Gastos, Main.pantallas1Gastos, Main.camaras1Gastos, Main.pines1Gastos, Main.jefe1Gastos, Main.gerente1Gastos)));
+                Planta1.gananciasNetas1.setText(String.valueOf(Main.gananciaTotal1 - getGananciasNetas(Main.botones1Gastos, Main.pantallas1Gastos, Main.camaras1Gastos, Main.pines1Gastos, Main.jefe1Gastos, Main.gerente1Gastos)));
                 
                 // se hace release del sem
                 

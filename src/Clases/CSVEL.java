@@ -58,8 +58,8 @@ public class CSVEL {
     
     public static void GuardarHistorico(){
         try{
-           FileWriter csvGuardar = new FileWriter("./Histórico.csv"); 
-           csvGuardar.write(Main.dias + "\n" + Main.botones1Contratados);
+           FileWriter csvGuardar = new FileWriter("./Histórico.csv", true); 
+           csvGuardar.append((Main.totalCorridas + 1) + "," + Main.diasTranscurridos + "," +Main.cambio + "\n" + Main.botones1Establecidos +  "," + Main.pantallas1Establecidos +  "," + Main.camaras1Establecidos +  "," + Main.pines1Establecidos +  "," + Main.ensambladores1Establecidos +  "," + Main.telefonos1Ensamblados + "," + Main.gananciasNetas1 + "," + Main.botones2Establecidos +  "," + Main.pantallas2Establecidos +  "," + Main.camaras2Establecidos +  "," + Main.pines2Establecidos +  "," + Main.ensambladores2Establecidos +  "," + Main.telefonos2Ensamblados + "," + Main.gananciasNetas2 + "\n");
            csvGuardar.flush();
            csvGuardar.close();
         }catch(Exception e){
