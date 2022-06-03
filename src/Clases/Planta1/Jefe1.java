@@ -63,9 +63,9 @@ public class Jefe1 extends Thread{
                
                 //pasa un dia y se settea en interfaz el dia
                 
-                Main.dias++;
+//                Main.dias++;
                 Planta1.dias1.setText(String.valueOf(Main.dias));
-                Main.diasRestantes--;
+//                Main.diasRestantes--;
                 Planta1.diasRestantes1.setText(String.valueOf(Main.diasRestantes));
                 
                 //se actualizan los gastos

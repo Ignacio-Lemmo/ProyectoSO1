@@ -40,8 +40,11 @@ public class Simulacion extends javax.swing.JFrame {
         guardarHistorico = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         dashboard = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         planta2.setBackground(new java.awt.Color(255, 255, 255));
         planta2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -51,6 +54,7 @@ public class Simulacion extends javax.swing.JFrame {
                 planta2ActionPerformed(evt);
             }
         });
+        getContentPane().add(planta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 203, 303, -1));
 
         planta1.setBackground(new java.awt.Color(255, 255, 255));
         planta1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -60,6 +64,7 @@ public class Simulacion extends javax.swing.JFrame {
                 planta1ActionPerformed(evt);
             }
         });
+        getContentPane().add(planta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 154, -1, -1));
 
         ambas.setBackground(new java.awt.Color(255, 255, 255));
         ambas.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -69,6 +74,7 @@ public class Simulacion extends javax.swing.JFrame {
                 ambasActionPerformed(evt);
             }
         });
+        getContentPane().add(ambas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 105, 303, -1));
 
         guardarHistorico.setBackground(new java.awt.Color(255, 255, 255));
         guardarHistorico.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -78,9 +84,11 @@ public class Simulacion extends javax.swing.JFrame {
                 guardarHistoricoActionPerformed(evt);
             }
         });
+        getContentPane().add(guardarHistorico, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 274, 303, -1));
 
         jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 48)); // NOI18N
         jLabel1.setText("Sony");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 11, -1, -1));
 
         dashboard.setBackground(new java.awt.Color(255, 255, 255));
         dashboard.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -90,52 +98,22 @@ public class Simulacion extends javax.swing.JFrame {
                 dashboardActionPerformed(evt);
             }
         });
+        getContentPane().add(dashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 325, 303, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(planta1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ambas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(planta2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(guardarHistorico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(89, 89, 89)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(dashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+        jPanel1.setBackground(new java.awt.Color(0, 51, 255));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 330, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(53, 53, 53)
-                .addComponent(ambas)
-                .addGap(18, 18, 18)
-                .addComponent(planta1)
-                .addGap(18, 18, 18)
-                .addComponent(planta2)
-                .addGap(27, 27, 27)
-                .addComponent(guardarHistorico)
-                .addContainerGap(62, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(325, Short.MAX_VALUE)
-                    .addComponent(dashboard)
-                    .addContainerGap()))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 160, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 330, 160));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -219,6 +197,7 @@ public class Simulacion extends javax.swing.JFrame {
     private javax.swing.JButton dashboard;
     private javax.swing.JButton guardarHistorico;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton planta1;
     private javax.swing.JButton planta2;
     // End of variables declaration//GEN-END:variables

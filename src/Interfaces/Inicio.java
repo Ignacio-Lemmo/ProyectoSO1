@@ -43,6 +43,7 @@ public class Inicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -58,7 +59,7 @@ public class Inicio extends javax.swing.JFrame {
                 parametrosActionPerformed(evt);
             }
         });
-        jPanel1.add(parametros, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 200, 40));
+        jPanel1.add(parametros, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 200, 40));
 
         iniciar.setBackground(new java.awt.Color(255, 255, 255));
         iniciar.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -70,15 +71,15 @@ public class Inicio extends javax.swing.JFrame {
                 iniciarActionPerformed(evt);
             }
         });
-        jPanel1.add(iniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 170, 30));
+        jPanel1.add(iniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 200, 40));
 
         jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 48)); // NOI18N
         jLabel1.setText("Sony");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 14, -1, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/10-dark-blue-watercolor-brush-stroke-9.png"))); // NOI18N
         jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-440, 30, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-460, 34, -1, 410));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 290));
 

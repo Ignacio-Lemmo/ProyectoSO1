@@ -27,9 +27,9 @@ public class Jefe2 extends Thread{
                         Planta2.jefe2.setText("Trabajando");
                         Thread.sleep((Main.tiempo/24)*6);
 
-//                        Main.dias ++;
+                        Main.dias ++;
                         Planta2.dias.setText(String.valueOf(Main.dias));
-//                        Main.diasRestantes --;
+                        Main.diasRestantes --;
                         Planta2.diasRestantes.setText(String.valueOf(Main.diasRestantes));
 
                         Main.botones2Gastos += Clases.Planta2.Botones2.sueldo * Main.botones2Contratados;

@@ -94,6 +94,7 @@ public class Parametros extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 153));
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel1.setText("Productores de la planta 2 iniciales contratados:");
@@ -475,7 +476,7 @@ public class Parametros extends javax.swing.JFrame {
             int camaras2Almacen2 = Integer.parseInt(camaras2Almacen.getText());
             
             
-            if(tiempo2>0 && entregas2>0 && pantallas1Contratados2>0 && botones1Contratados2>0 && pines1Contratados2>0 && camaras1Contratados2>0 && ensambladores12>0 && pantallas1Almacen2>0 && botones1Almacen2>0 && pines1Almacen2>0 && camaras1Almacen2>0 && pantallas2Contratados2>0 && botones2Contratados2>0 && pines2Contratados2>0 && camaras2Contratados2>0 && ensambladores22>0 && pantallas2Almacen2>0 && botones2Almacen2>0 && pines2Almacen2>0 && camaras2Almacen2>0 && (botones2Contratados2+camaras2Contratados2+pines2Contratados2+pantallas2Contratados2 <= 15) && (botones1Contratados2+camaras1Contratados2+pines1Contratados2+pantallas1Contratados2 <= 15) ){
+            if(tiempo2>0 && entregas2>0 && pantallas1Contratados2>0 && botones1Contratados2>0 && pines1Contratados2>0 && camaras1Contratados2>0 && ensambladores12>0 && pantallas1Almacen2>0 && botones1Almacen2>0 && pines1Almacen2>0 && camaras1Almacen2>0 && pantallas2Contratados2>0 && botones2Contratados2>0 && pines2Contratados2>0 && camaras2Contratados2>0 && ensambladores22>0 && pantallas2Almacen2>0 && botones2Almacen2>0 && pines2Almacen2>0 && camaras2Almacen2>0 && (botones2Contratados2+camaras2Contratados2+pines2Contratados2+pantallas2Contratados2+ensambladores22 <= 15) && (botones1Contratados2+camaras1Contratados2+pines1Contratados2+pantallas1Contratados2+ensambladores12 <= 16) ){
                 //Establecer nuevo tiempo.
                 Main.tiempo = Integer.parseInt(tiempo.getText());
                 Main.diasRestantes = Integer.parseInt(tiempoRestante.getText());
@@ -525,7 +526,7 @@ public class Parametros extends javax.swing.JFrame {
                     this.dispose();
                 }
             }else{
-                JOptionPane.showMessageDialog(null, "Asegurate de ingresas valores mayores a 0 en los parámetros.");
+                JOptionPane.showMessageDialog(null, "Asegurate de ingresas valores válidos en los parámetros.");
             }  
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "Asegurate de ingresas valores correctos en los parámetros.");

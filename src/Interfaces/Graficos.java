@@ -80,7 +80,8 @@ public class Graficos extends javax.swing.JFrame {
 
         jLabel13.setText("jLabel13");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -89,6 +90,7 @@ public class Graficos extends javax.swing.JFrame {
 
         corridas.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         corridas.setForeground(new java.awt.Color(153, 153, 153));
+        corridas.setMaximumRowCount(25);
         corridas.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 corridasItemStateChanged(evt);

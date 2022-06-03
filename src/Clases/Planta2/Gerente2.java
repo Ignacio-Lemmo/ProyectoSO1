@@ -46,7 +46,7 @@ public class Gerente2 extends Thread {
                         Thread.sleep(Math.round(vigilandu));
                         Planta2.gerente2.setText("Esperando");
                         Thread.sleep(Math.round(vigilandu)); 
-                        counter += (vigilando/60);
+                        counter += (vigilando);
                     }
                 }
             }catch (Exception e) {

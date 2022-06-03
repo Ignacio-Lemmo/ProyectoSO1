@@ -68,6 +68,7 @@ public class Planta2Personal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -226,7 +227,7 @@ public class Planta2Personal extends javax.swing.JFrame {
         getContentPane().add(ensambladores2, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 234, 34, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/154-1548140_blue-brush-stroke-png-transparent-png.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, 0, -1, 370));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -10, -1, 370));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
